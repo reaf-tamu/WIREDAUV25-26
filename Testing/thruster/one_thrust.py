@@ -5,7 +5,8 @@ from adafruit_servokit import ServoKit
 kit = ServoKit(channels=16)
 
 #Set correct PWM range for ESCs: 1100–1900 µs,
-A1 = kit.servo[0].angle = 90 # this one works
+#change index
+A1 = kit.servo[5].angle = 90 # this one works
 # A1 = kit.servo[2].set_pulse_width_range(1100, 1900)
 
 
@@ -29,7 +30,8 @@ class Motor:
         self.run()
 
 # Initialize A1 on channel 7 (ESC signal wire is connected here),
-A1 = Motor(0)
+#change index
+A1 = Motor(5)
 
 
 # STEP 1: ESC Initialization,

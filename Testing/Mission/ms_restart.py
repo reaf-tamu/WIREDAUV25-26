@@ -15,7 +15,7 @@ print("Mission switch activating…")
 
 while (GPIO.input(pin_number) == GPIO.LOW):
 	print(GPIO.input(pin_number))
-	time.sleep(0.1)
+	time.sleep(0.05)
 
 print("beginning code")
 time.sleep(3)

@@ -1,5 +1,15 @@
+
 import time
 from adafruit_servokit import ServoKit
+import Jetson.GPIO as GPIO
+
+
+GPIO.cleanup()
+# sets up mission switch
+pin_number = 32	# what pin number is it connected to, needs to be a GPIO pin found on pinout
+GPIO.setmode(GPIO.BOARD)
+GPIO.setup(pin_number, GPIO.IN)	# the button is an input
+
 
 # Initialize PCA9685 with 16 channels,
 kit = ServoKit(channels=16)
@@ -67,39 +77,138 @@ M3.run()
 M4.set_speed(90)
 M4.run()
 
-time.sleep(5)  # Wait 5 seconds for ESC to sound (listen for 2 beeps)
+"""
+time.sleep(3)  # Wait 5 seconds for ESC to sound (listen for 2 beeps)
+
+
+# activate mission switch
+print("Mission switch activating…")
+while (GPIO.input(pin_number) == GPIO.LOW):
+	print("LOW")
+	time.sleep(0.5)
+print("HIGH")
+
+print("beginning code")
+time.sleep(3)
+
+while True:
+	while (GPIO.input(pin_number) == GPIO.LOW):
+		# down
+		print("going down")
+		A2.set_speed(90)
+		A2.run()
+		A3.set_speed(90)
+		A3.run()
+		M2.set_speed(90)
+		M2.run()
+		M3.set_speed(90)
+		M3.run()
+		time.sleep(2)
+		while True:
+			print("hovering")
+			A2.set_speed(90)
+			A2.run()
+			A3.set_speed(90)
+			A3.run()
+			M2.set_speed(87)
+			M2.run()
+			M3.set_speed(87)
+			M3.run()
+			
+			# forward
+			print("forward")
+			A1.set_speed(100)  
+			A1.run()
+			A4.set_speed(80)
+			A4.run()
+			M1.set_speed(100)  
+			M1.run()
+			M4.set_speed(80)
+			M4.run()
+		
+	time.sleep(3)	
+	print("pausing code")
+	count = 0
+	
+	while (GPIO.input(pin_number) == GPIO.LOW):
+		print(GPIO.input(pin_number))
+		A1.set_speed(90)
+		A1.run()
+		A2.set_speed(90)
+		A2.run()
+		A3.set_speed(90)
+		A3.run()
+		A4.set_speed(90)
+		A4.run()
+		M1.set_speed(90)
+		M1.run()
+		M2.set_speed(90)
+		M2.run()
+		M3.set_speed(90)
+		M3.run()
+		M4.set_speed(90)
+		M4.run()
+		time.sleep(0.1)
+	
+	time.sleep(3)
+	print("restarting code")
 
 
 # run thrusters forward for 5 seconds, reverse for 5 seconds
 while True:
-	# forward
-	A1.set_speed(100)  
+
+	'''# backward
+	A1.set_speed(110)  
 	A1.run()
-	A4.set_speed(100)
+	A4.set_speed(110)
 	A4.run()
-	M1.set_speed(100)  
+	M1.set_speed(110)  
 	M1.run()
-	M4.set_speed(100)
+	M4.set_speed(112)
+	M4.run()
+	print(f"Reverse thruster speeds: {A1.speed}, {A4.speed}, {M1.speed}, {M4.speed}")
+	time.sleep(5)'''
+	# down
+	print("going down")
+	A2.set_speed(70)
+	A2.run()
+	A3.set_speed(70)
+	A3.run()
+	M2.set_speed(70)
+	M2.run()
+	M3.set_speed(70)
+	M3.run()
+	time.sleep(2)
+	
+	print("hovering")
+	A2.set_speed(83)
+	A2.run()
+	A3.set_speed(81)
+	A3.run()
+	M2.set_speed(83)
+	M2.run()
+	M3.set_speed(81)
+	M3.run()
+	
+	# forward
+	print("forward")
+	A1.set_speed(110)  
+	A1.run()
+	A4.set_speed(70)
+	A4.run()
+	M1.set_speed(110)  
+	M1.run()
+	M4.set_speed(70)
 	M4.run()
 	print(f"Foward thruster speeds: {A1.speed}, {A4.speed}, {M1.speed}, {M4.speed}")
 	time.sleep(5)
 
-	# backward
-	A1.set_speed(80)  
-	A1.run()
-	A4.set_speed(80)
-	A4.run()
-	M1.set_speed(80)  
-	M1.run()
-	M4.set_speed(80)
-	M4.run()
-	print(f"Reverse thruster speeds: {A1.speed}, {A4.speed}, {M1.speed}, {M4.speed}")
-	time.sleep(5)
+	
 
 # run thrusters CCW for 5 seconds, CW for 5 seconds
 while True:
 	# CCW
-	A2.set_speed(100)  
+	'''A2.set_speed(100)  
 	A2.run()
 	A3.set_speed(100)
 	A3.run()
@@ -121,3 +230,4 @@ while True:
 	M3.run()
 	print(f"CW thruster speeds: {A2.speed}, {A3.speed}, {M2.speed}, {M3.speed}")
 	time.sleep(5)
+"""

@@ -44,10 +44,10 @@ def forward():
 
 def down():
 	print("going down")
-	A2.setSpeed(70)
-	A3.setSpeed(70)
-	M2.setSpeed(70)
-	M3.setSpeed(70)
+	A2.setSpeed(100)
+	A3.setSpeed(100)
+	M2.setSpeed(100)
+	M3.setSpeed(100)
 	A2.run()
 	A3.run()
 	M2.run()
