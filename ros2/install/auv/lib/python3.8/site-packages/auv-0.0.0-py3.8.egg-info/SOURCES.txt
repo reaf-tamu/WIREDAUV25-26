@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../../build/auv/auv.egg-info/PKG-INFO
+../../build/auv/auv.egg-info/SOURCES.txt
+../../build/auv/auv.egg-info/dependency_links.txt
+../../build/auv/auv.egg-info/entry_points.txt
+../../build/auv/auv.egg-info/requires.txt
+../../build/auv/auv.egg-info/top_level.txt
+../../build/auv/auv.egg-info/zip-safe
+auv/__init__.py
+auv/vn_pub.py
+resource/auv
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

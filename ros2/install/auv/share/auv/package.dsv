@@ -1,0 +1,9 @@
+source;share/auv/hook/cmake_prefix_path.ps1
+source;share/auv/hook/cmake_prefix_path.dsv
+source;share/auv/hook/cmake_prefix_path.sh
+source;share/auv/hook/pythonpath.ps1
+source;share/auv/hook/pythonpath.dsv
+source;share/auv/hook/pythonpath.sh
+source;share/auv/hook/ament_prefix_path.ps1
+source;share/auv/hook/ament_prefix_path.dsv
+source;share/auv/hook/ament_prefix_path.sh

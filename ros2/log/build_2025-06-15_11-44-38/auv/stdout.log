@@ -1,0 +1,32 @@
+running egg_info
+creating ../../build/auv/auv.egg-info
+writing ../../build/auv/auv.egg-info/PKG-INFO
+writing dependency_links to ../../build/auv/auv.egg-info/dependency_links.txt
+writing entry points to ../../build/auv/auv.egg-info/entry_points.txt
+writing requirements to ../../build/auv/auv.egg-info/requires.txt
+writing top-level names to ../../build/auv/auv.egg-info/top_level.txt
+writing manifest file '../../build/auv/auv.egg-info/SOURCES.txt'
+reading manifest file '../../build/auv/auv.egg-info/SOURCES.txt'
+writing manifest file '../../build/auv/auv.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/wiredauv2024/AUV/WIRED24-25/ros2/build/auv/build
+creating /home/wiredauv2024/AUV/WIRED24-25/ros2/build/auv/build/lib
+creating /home/wiredauv2024/AUV/WIRED24-25/ros2/build/auv/build/lib/auv
+copying auv/vn_pub.py -> /home/wiredauv2024/AUV/WIRED24-25/ros2/build/auv/build/lib/auv
+copying auv/__init__.py -> /home/wiredauv2024/AUV/WIRED24-25/ros2/build/auv/build/lib/auv
+running install
+running install_lib
+creating /home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/lib/python3.8/site-packages/auv
+copying /home/wiredauv2024/AUV/WIRED24-25/ros2/build/auv/build/lib/auv/vn_pub.py -> /home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/lib/python3.8/site-packages/auv
+copying /home/wiredauv2024/AUV/WIRED24-25/ros2/build/auv/build/lib/auv/__init__.py -> /home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/lib/python3.8/site-packages/auv
+byte-compiling /home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/lib/python3.8/site-packages/auv/vn_pub.py to vn_pub.cpython-38.pyc
+byte-compiling /home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/lib/python3.8/site-packages/auv/__init__.py to __init__.cpython-38.pyc
+running install_data
+copying resource/auv -> /home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/share/ament_index/resource_index/packages
+copying package.xml -> /home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/share/auv
+running install_egg_info
+Copying ../../build/auv/auv.egg-info to /home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/lib/python3.8/site-packages/auv-0.0.0-py3.8.egg-info
+running install_scripts
+Installing vn_pub script to /home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/lib/auv
+writing list of installed files to '/home/wiredauv2024/AUV/WIRED24-25/ros2/build/auv/install.log'

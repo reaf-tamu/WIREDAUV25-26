@@ -1,0 +1,20 @@
+[0.743s] Invoking command in '/home/wiredauv2024/AUV/WIRED24-25/ros2/build/packageSample': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wiredauv2024/AUV/WIRED24-25/ros2/install/py_pubsub:/opt/ros/galactic /usr/bin/cmake --build /home/wiredauv2024/AUV/WIRED24-25/ros2/build/packageSample -- -j6 -l6
+[1.453s] Invoked command in '/home/wiredauv2024/AUV/WIRED24-25/ros2/build/packageSample' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wiredauv2024/AUV/WIRED24-25/ros2/install/py_pubsub:/opt/ros/galactic /usr/bin/cmake --build /home/wiredauv2024/AUV/WIRED24-25/ros2/build/packageSample -- -j6 -l6
+[1.488s] Invoking command in '/home/wiredauv2024/AUV/WIRED24-25/ros2/build/packageSample': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wiredauv2024/AUV/WIRED24-25/ros2/install/py_pubsub:/opt/ros/galactic /usr/bin/cmake --install /home/wiredauv2024/AUV/WIRED24-25/ros2/build/packageSample
+[1.517s] -- Install configuration: ""
+[1.518s] -- Up-to-date: /home/wiredauv2024/AUV/WIRED24-25/ros2/install/packageSample/share/ament_index/resource_index/package_run_dependencies/packageSample
+[1.521s] -- Up-to-date: /home/wiredauv2024/AUV/WIRED24-25/ros2/install/packageSample/share/ament_index/resource_index/parent_prefix_path/packageSample
+[1.521s] -- Up-to-date: /home/wiredauv2024/AUV/WIRED24-25/ros2/install/packageSample/share/packageSample/environment/ament_prefix_path.sh
+[1.522s] -- Up-to-date: /home/wiredauv2024/AUV/WIRED24-25/ros2/install/packageSample/share/packageSample/environment/ament_prefix_path.dsv
+[1.523s] -- Up-to-date: /home/wiredauv2024/AUV/WIRED24-25/ros2/install/packageSample/share/packageSample/environment/path.sh
+[1.524s] -- Up-to-date: /home/wiredauv2024/AUV/WIRED24-25/ros2/install/packageSample/share/packageSample/environment/path.dsv
+[1.524s] -- Up-to-date: /home/wiredauv2024/AUV/WIRED24-25/ros2/install/packageSample/share/packageSample/local_setup.bash
+[1.524s] -- Up-to-date: /home/wiredauv2024/AUV/WIRED24-25/ros2/install/packageSample/share/packageSample/local_setup.sh
+[1.525s] -- Up-to-date: /home/wiredauv2024/AUV/WIRED24-25/ros2/install/packageSample/share/packageSample/local_setup.zsh
+[1.525s] -- Up-to-date: /home/wiredauv2024/AUV/WIRED24-25/ros2/install/packageSample/share/packageSample/local_setup.dsv
+[1.525s] -- Installing: /home/wiredauv2024/AUV/WIRED24-25/ros2/install/packageSample/share/packageSample/package.dsv
+[1.525s] -- Up-to-date: /home/wiredauv2024/AUV/WIRED24-25/ros2/install/packageSample/share/ament_index/resource_index/packages/packageSample
+[1.525s] -- Up-to-date: /home/wiredauv2024/AUV/WIRED24-25/ros2/install/packageSample/share/packageSample/cmake/packageSampleConfig.cmake
+[1.525s] -- Up-to-date: /home/wiredauv2024/AUV/WIRED24-25/ros2/install/packageSample/share/packageSample/cmake/packageSampleConfig-version.cmake
+[1.525s] -- Up-to-date: /home/wiredauv2024/AUV/WIRED24-25/ros2/install/packageSample/share/packageSample/package.xml
+[1.537s] Invoked command in '/home/wiredauv2024/AUV/WIRED24-25/ros2/build/packageSample' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wiredauv2024/AUV/WIRED24-25/ros2/install/py_pubsub:/opt/ros/galactic /usr/bin/cmake --install /home/wiredauv2024/AUV/WIRED24-25/ros2/build/packageSample

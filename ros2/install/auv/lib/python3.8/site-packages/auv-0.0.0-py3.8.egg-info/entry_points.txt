@@ -1,0 +1,3 @@
+[console_scripts]
+vn_pub = auv.vn_pub:main
+
