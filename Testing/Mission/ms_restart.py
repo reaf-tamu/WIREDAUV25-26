@@ -11,29 +11,60 @@ GPIO.setup(pin_number, GPIO.IN)	# the button is an input
 # the rest of our code would be stuck behind the loop
 # the button is active low
 
+print("Mission switch activating…")
+
+while (GPIO.input(pin_number) == GPIO.LOW):
+	print(GPIO.input(pin_number))
+	time.sleep(0.1)
+
+print("beginning code")
+time.sleep(3)
+
+count = 0
+
+while True:
+	while (GPIO.input(pin_number) == GPIO.LOW):
+		print(count)
+		count += 1
+		time.sleep(0.1)
+	
+	time.sleep(3)	
+	print("pausing code")
+	count = 0
+	
+	while (GPIO.input(pin_number) == GPIO.LOW):
+		print(GPIO.input(pin_number))
+		time.sleep(0.1)
+	
+	time.sleep(3)
+	print("restarting code")
+
+"""
 try:
 
 	print("Mission switch activating…")
 
 	while True:
-		if GPIO.input(pin_number) == GPIO.LOW:
+		print(GPIO.input(pin_number))
+		if GPIO.input(pin_number) == GPIO.HIGH:
 			
-			while GPIO.input(pin_number) == GPIO.LOW: # Button is held down for a sec
+			while GPIO.input(pin_number) == GPIO.HIGH: # Button is held down for a sec
 				time.sleep(1)
 			
-			print("Low")
+			print(GPIO.input(pin_number))
 			
 			
 			while True:
-				if GPIO.input(pin_number) == GPIO.LOW:
+				if GPIO.input(pin_number) == GPIO.HIGH:
 					break # restarts code if button pressed again
 			
 				else: 
-print("HIGH") # if you wanted to still print high after the button is pressed
-time.sleep(0.5)
+					print(GPIO.input(pin_number)) # if you wanted to still print high after the button is pressed
+					time.sleep(0.5)
 		else:
-			print("HIGH")
+			print(GPIO.input(pin_number))
 			time.sleep(0.5)
 
 finally:
 	GPIO.cleanup()
+	"""

@@ -11,10 +11,10 @@ GPIO.setup(pin_number, GPIO.IN)	# the button is an input
 
 # activate mission switch
 print("Mission switch activating…")
-while (GPIO.input(pin_number) == GPIO.HIGH):
-	print("HIGH")
+while (GPIO.input(pin_number) == GPIO.LOW):
+	print("LOW")
 	time.sleep(0.5)
-print("LOW")
+print("HIGH")
 
 
 # thrusters
@@ -23,7 +23,7 @@ kit = ServoKit(channels=16)
 
 #Set correct PWM range for ESCs: 1100–1900 µs,
 # A1 = kit.servo[7].set_pulse_width_range(1100, 1900)
-A1 = kit.servo[7].angle = 90
+A1 = kit.servo[11].angle = 90
 
 class Motor:
     def __init__(self, channel):
@@ -45,7 +45,7 @@ class Motor:
         self.run()
 
 # Initialize A1 on channel 7 (ESC signal wire is connected here),
-A1 = Motor(7)
+A1 = Motor(11)
 
 
 # ESC Initialization,
@@ -65,7 +65,7 @@ A1.run()
 print(f"Thruster speed: {A1.speed}")
 time.sleep(1)
 
-while (GPIO.input(pin_number) == GPIO.HIGH):
+while (GPIO.input(pin_number) == GPIO.LOW):
 	print("running")
 	
 A1.set_speed(90)  # ~1400 µs (reverse)
