@@ -1,0 +1,95 @@
+[0.000000] (-) TimerEvent: {}
+[0.000573] (-) JobUnselected: {'identifier': 'packageSample'}
+[0.000962] (-) JobUnselected: {'identifier': 'py_pubsub'}
+[0.001180] (-) JobUnselected: {'identifier': 'turtlesim'}
+[0.001622] (auv) JobQueued: {'identifier': 'auv', 'dependencies': OrderedDict()}
+[0.001971] (auv) JobStarted: {'identifier': 'auv'}
+[0.098913] (-) TimerEvent: {}
+[0.199628] (-) TimerEvent: {}
+[0.300614] (-) TimerEvent: {}
+[0.401484] (-) TimerEvent: {}
+[0.502462] (-) TimerEvent: {}
+[0.603415] (-) TimerEvent: {}
+[0.704300] (-) TimerEvent: {}
+[0.805102] (-) TimerEvent: {}
+[0.905816] (-) TimerEvent: {}
+[1.009781] (-) TimerEvent: {}
+[1.111364] (-) TimerEvent: {}
+[1.212175] (-) TimerEvent: {}
+[1.313168] (-) TimerEvent: {}
+[1.414080] (-) TimerEvent: {}
+[1.514872] (-) TimerEvent: {}
+[1.615689] (-) TimerEvent: {}
+[1.716496] (-) TimerEvent: {}
+[1.817177] (-) TimerEvent: {}
+[1.917942] (-) TimerEvent: {}
+[2.018729] (-) TimerEvent: {}
+[2.119512] (-) TimerEvent: {}
+[2.220304] (-) TimerEvent: {}
+[2.321066] (-) TimerEvent: {}
+[2.421805] (-) TimerEvent: {}
+[2.522609] (-) TimerEvent: {}
+[2.623500] (-) TimerEvent: {}
+[2.724463] (-) TimerEvent: {}
+[2.825282] (-) TimerEvent: {}
+[2.925952] (-) TimerEvent: {}
+[3.026613] (-) TimerEvent: {}
+[3.127285] (-) TimerEvent: {}
+[3.228042] (-) TimerEvent: {}
+[3.328792] (-) TimerEvent: {}
+[3.429704] (-) TimerEvent: {}
+[3.530551] (-) TimerEvent: {}
+[3.631417] (-) TimerEvent: {}
+[3.732254] (-) TimerEvent: {}
+[3.833200] (-) TimerEvent: {}
+[3.934138] (-) TimerEvent: {}
+[4.035041] (-) TimerEvent: {}
+[4.136654] (-) TimerEvent: {}
+[4.140533] (auv) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/auv', 'build', '--build-base', '/home/wiredauv2024/AUV/WIRED24-25/ros2/build/auv/build', 'install', '--record', '/home/wiredauv2024/AUV/WIRED24-25/ros2/build/auv/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/wiredauv2024/AUV/WIRED24-25/ros2/src/auv', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'wiredauv2024', 'SSH_AGENT_PID': '4337', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib', 'HOME': '/home/wiredauv2024', 'OLDPWD': '/home/wiredauv2024/AUV/WIRED24-25/ros2/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '4164', 'DBUS_STARTER_BUS_TYPE': 'session', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=9fa2293404baed8263eacf6368601416', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'ROS_DISTRO': 'galactic', 'LOGNAME': 'wiredauv2024', 'JOURNAL_STREAM': '8:71183', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'wiredauv2024', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/galactic/bin:/home/wiredauv2024/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/wiredauv2024-desktop:@/tmp/.ICE-unix/4372,unix/wiredauv2024-desktop:/tmp/.ICE-unix/4372', 'INVOCATION_ID': '09707f012c6c422fa9b2c400a123efca', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/1a08a572_51c6_4114_95ef_048f315c9ebe', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.143', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/galactic', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/wiredauv2024/AUV/WIRED24-25/ros2/build/auv', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=9fa2293404baed8263eacf6368601416', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/wiredauv2024/AUV/WIRED24-25/ros2/build/auv/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages', 'COLCON': '1', 'VTE_VERSION': '6003'}, 'shell': False}
+[4.236978] (-) TimerEvent: {}
+[4.338024] (-) TimerEvent: {}
+[4.438867] (-) TimerEvent: {}
+[4.539684] (-) TimerEvent: {}
+[4.640522] (-) TimerEvent: {}
+[4.737734] (auv) StdoutLine: {'line': b'running egg_info\n'}
+[4.738797] (auv) StdoutLine: {'line': b'writing ../../build/auv/auv.egg-info/PKG-INFO\n'}
+[4.740551] (-) TimerEvent: {}
+[4.841034] (-) TimerEvent: {}
+[4.877562] (auv) StdoutLine: {'line': b'writing dependency_links to ../../build/auv/auv.egg-info/dependency_links.txt\n'}
+[4.878177] (auv) StdoutLine: {'line': b'writing entry points to ../../build/auv/auv.egg-info/entry_points.txt\n'}
+[4.878454] (auv) StdoutLine: {'line': b'writing requirements to ../../build/auv/auv.egg-info/requires.txt\n'}
+[4.878678] (auv) StdoutLine: {'line': b'writing top-level names to ../../build/auv/auv.egg-info/top_level.txt\n'}
+[4.891397] (auv) StdoutLine: {'line': b"reading manifest file '../../build/auv/auv.egg-info/SOURCES.txt'\n"}
+[4.893468] (auv) StdoutLine: {'line': b"writing manifest file '../../build/auv/auv.egg-info/SOURCES.txt'\n"}
+[4.893756] (auv) StdoutLine: {'line': b'running build\n'}
+[4.893950] (auv) StdoutLine: {'line': b'running build_py\n'}
+[4.896320] (auv) StdoutLine: {'line': b'copying auv/ping_pub.py -> /home/wiredauv2024/AUV/WIRED24-25/ros2/build/auv/build/lib/auv\n'}
+[4.896659] (auv) StdoutLine: {'line': b'copying auv/cam_pub.py -> /home/wiredauv2024/AUV/WIRED24-25/ros2/build/auv/build/lib/auv\n'}
+[4.897025] (auv) StdoutLine: {'line': b'copying auv/ms_pub.py -> /home/wiredauv2024/AUV/WIRED24-25/ros2/build/auv/build/lib/auv\n'}
+[4.897576] (auv) StdoutLine: {'line': b'running install\n'}
+[4.899733] (auv) StdoutLine: {'line': b'running install_lib\n'}
+[4.902533] (auv) StdoutLine: {'line': b'copying /home/wiredauv2024/AUV/WIRED24-25/ros2/build/auv/build/lib/auv/ping_pub.py -> /home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/lib/python3.8/site-packages/auv\n'}
+[4.902889] (auv) StdoutLine: {'line': b'copying /home/wiredauv2024/AUV/WIRED24-25/ros2/build/auv/build/lib/auv/cam_pub.py -> /home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/lib/python3.8/site-packages/auv\n'}
+[4.903135] (auv) StdoutLine: {'line': b'copying /home/wiredauv2024/AUV/WIRED24-25/ros2/build/auv/build/lib/auv/ms_pub.py -> /home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/lib/python3.8/site-packages/auv\n'}
+[4.904897] (auv) StdoutLine: {'line': b'byte-compiling /home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/lib/python3.8/site-packages/auv/ping_pub.py to ping_pub.cpython-38.pyc\n'}
+[4.905284] (auv) StderrLine: {'line': b'Sorry: IndentationError: unexpected indent (ping_pub.py, line 17)\n'}
+[4.905543] (auv) StdoutLine: {'line': b'byte-compiling /home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/lib/python3.8/site-packages/auv/cam_pub.py to cam_pub.cpython-38.pyc\n'}
+[4.906785] (auv) StdoutLine: {'line': b'byte-compiling /home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/lib/python3.8/site-packages/auv/ms_pub.py to ms_pub.cpython-38.pyc\n'}
+[4.907556] (auv) StdoutLine: {'line': b'running install_data\n'}
+[4.908834] (auv) StdoutLine: {'line': b'running install_egg_info\n'}
+[4.912976] (auv) StdoutLine: {'line': b"removing '/home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/lib/python3.8/site-packages/auv-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[4.913773] (auv) StdoutLine: {'line': b'Copying ../../build/auv/auv.egg-info to /home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/lib/python3.8/site-packages/auv-0.0.0-py3.8.egg-info\n'}
+[4.916372] (auv) StdoutLine: {'line': b'running install_scripts\n'}
+[4.941134] (-) TimerEvent: {}
+[4.963131] (auv) StdoutLine: {'line': b'Installing cam_pub script to /home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/lib/auv\n'}
+[5.041307] (-) TimerEvent: {}
+[5.100125] (auv) StdoutLine: {'line': b'Installing ms_pub script to /home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/lib/auv\n'}
+[5.100815] (auv) StdoutLine: {'line': b'Installing ping_pub script to /home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/lib/auv\n'}
+[5.101124] (auv) StdoutLine: {'line': b'Installing vn_pub script to /home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/lib/auv\n'}
+[5.101493] (auv) StdoutLine: {'line': b"writing list of installed files to '/home/wiredauv2024/AUV/WIRED24-25/ros2/build/auv/install.log'\n"}
+[5.141385] (-) TimerEvent: {}
+[5.189607] (auv) CommandEnded: {'returncode': 0}
+[5.241516] (-) TimerEvent: {}
+[5.342242] (-) TimerEvent: {}
+[5.419914] (auv) JobEnded: {'identifier': 'auv', 'rc': 0}
+[5.422146] (-) EventReactorShutdown: {}

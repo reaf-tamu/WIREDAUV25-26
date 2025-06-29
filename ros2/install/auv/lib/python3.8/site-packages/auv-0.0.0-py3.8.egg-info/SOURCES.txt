@@ -9,6 +9,9 @@ setup.py
 ../../build/auv/auv.egg-info/top_level.txt
 ../../build/auv/auv.egg-info/zip-safe
 auv/__init__.py
+auv/cam_pub.py
+auv/ms_pub.py
+auv/ping_pub.py
 auv/vn_pub.py
 resource/auv
 test/test_copyright.py

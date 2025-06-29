@@ -21,6 +21,9 @@ setup(
     entry_points={
         'console_scripts': [
         'vn_pub = auv.vn_pub:main',
+        'cam_pub = auv.cam_pub:main',
+        'ms_pub = auv.ms_pub:main',
+        'ping_pub = auv.ping_pub:main',
         ],
     },
 )
