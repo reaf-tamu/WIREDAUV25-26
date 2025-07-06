@@ -12,7 +12,13 @@ auv/__init__.py
 auv/cam_pub.py
 auv/ms_pub.py
 auv/ping_pub.py
+auv/sub_draft.py
+auv/sub_draft2.py
 auv/vn_pub.py
+logic/__init__.py
+logic/cam_log.py
+logic/vn_log.py
+logic/vn_logic.py
 resource/auv
 test/test_copyright.py
 test/test_flake8.py

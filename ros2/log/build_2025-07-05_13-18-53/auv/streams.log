@@ -1,0 +1,36 @@
+[1.677s] Invoking command in '/home/wiredauv2024/AUV/WIRED24-25/ros2/src/auv': PYTHONPATH=/home/wiredauv2024/AUV/WIRED24-25/ros2/build/auv/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/auv build --build-base /home/wiredauv2024/AUV/WIRED24-25/ros2/build/auv/build install --record /home/wiredauv2024/AUV/WIRED24-25/ros2/build/auv/install.log --single-version-externally-managed install_data
+[2.288s] running egg_info
+[2.288s] writing ../../build/auv/auv.egg-info/PKG-INFO
+[2.289s] writing dependency_links to ../../build/auv/auv.egg-info/dependency_links.txt
+[2.290s] writing entry points to ../../build/auv/auv.egg-info/entry_points.txt
+[2.290s] writing requirements to ../../build/auv/auv.egg-info/requires.txt
+[2.290s] writing top-level names to ../../build/auv/auv.egg-info/top_level.txt
+[2.299s] reading manifest file '../../build/auv/auv.egg-info/SOURCES.txt'
+[2.300s] writing manifest file '../../build/auv/auv.egg-info/SOURCES.txt'
+[2.301s] running build
+[2.301s] running build_py
+[2.302s] copying auv/sub_draft.py -> /home/wiredauv2024/AUV/WIRED24-25/ros2/build/auv/build/lib/auv
+[2.302s] copying auv/vn_pub.py -> /home/wiredauv2024/AUV/WIRED24-25/ros2/build/auv/build/lib/auv
+[2.303s] running install
+[2.305s] running install_lib
+[2.307s] copying /home/wiredauv2024/AUV/WIRED24-25/ros2/build/auv/build/lib/auv/sub_draft.py -> /home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/lib/python3.8/site-packages/auv
+[2.307s] copying /home/wiredauv2024/AUV/WIRED24-25/ros2/build/auv/build/lib/auv/vn_pub.py -> /home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/lib/python3.8/site-packages/auv
+[2.310s] byte-compiling /home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/lib/python3.8/site-packages/auv/sub_draft.py to sub_draft.cpython-38.pyc
+[2.310s]   File "/home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/lib/python3.8/site-packages/auv/sub_draft.py", line 3
+[2.311s]     from std_msgs.msg import String, Float 32
+[2.311s]                                            ^
+[2.311s] SyntaxError: invalid syntax
+[2.311s] 
+[2.311s] byte-compiling /home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/lib/python3.8/site-packages/auv/vn_pub.py to vn_pub.cpython-38.pyc
+[2.312s] running install_data
+[2.312s] running install_egg_info
+[2.315s] removing '/home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/lib/python3.8/site-packages/auv-0.0.0-py3.8.egg-info' (and everything under it)
+[2.316s] Copying ../../build/auv/auv.egg-info to /home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/lib/python3.8/site-packages/auv-0.0.0-py3.8.egg-info
+[2.318s] running install_scripts
+[2.361s] Installing cam_pub script to /home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/lib/auv
+[2.361s] Installing ms_pub script to /home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/lib/auv
+[2.361s] Installing ping_pub script to /home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/lib/auv
+[2.362s] Installing sub_draft script to /home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/lib/auv
+[2.362s] Installing vn_pub script to /home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/lib/auv
+[2.363s] writing list of installed files to '/home/wiredauv2024/AUV/WIRED24-25/ros2/build/auv/install.log'
+[2.454s] Invoked command in '/home/wiredauv2024/AUV/WIRED24-25/ros2/src/auv' returned '0': PYTHONPATH=/home/wiredauv2024/AUV/WIRED24-25/ros2/build/auv/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/auv build --build-base /home/wiredauv2024/AUV/WIRED24-25/ros2/build/auv/build install --record /home/wiredauv2024/AUV/WIRED24-25/ros2/build/auv/install.log --single-version-externally-managed install_data

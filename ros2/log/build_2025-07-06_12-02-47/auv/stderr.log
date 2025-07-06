@@ -1,0 +1,5 @@
+  File "/home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/lib/python3.8/site-packages/auv/sub_draft2.py", line 110
+    print(ms))
+             ^
+SyntaxError: unmatched ')'
+

@@ -38,13 +38,28 @@ class VectorNavHeading:
         left_bound = self.origin - self.bound
         right_bound = self.origin + self.bound
         
-        if origin >= 0:
-        	left_range = self.origin - 180
-        	right_range = (self.origin + 180) - 360
-        elif origin < 0:
-        	left_range = (self.origin - 180) + 360
-        	right_range = self.origin + 180
-        
+        print(heading)
+        if self.origin >= 0:
+        	middle = self.origin - 180
+        	# right_range = (self.origin + 180) - 360
+        	if (left_bound <= heading <= right_bound):
+        		print("S")
+        	else:
+        		if (middle < heading <= self.origin):
+        			print("R")
+        		else:
+        			print("L")
+        elif self.origin < 0:
+        	# left_range = (self.origin - 180) + 360
+        	middle = self.origin + 180
+        	if (left_bound <= heading <= right_bound):
+        		print("S")
+        	else:
+        		if (middle > heading >= self.origin):
+        			print("L")
+        		else:
+        			print("R")
+        print()
 
         # handle wrap-around properly - these values will never be achieved (-180 to 180)
         """
@@ -52,17 +67,18 @@ class VectorNavHeading:
             heading -= 360
         elif heading < -180:
             heading += 360
-        """
+       """
         
 
-
+        """
         if (heading < left_bound):
             print(f"Heading {heading:.2f} outside left bound ({left_bound:.2f}), turn right.")
         elif heading > right_bound:
             print(f"Heading {heading:.2f} outside right bound ({right_bound:.2f}), turn left.")
         else:
             print(f"Heading {heading:.2f} within bounds, hold course.")
-
+        """
+	
     def run(self):
         try:
             while True:

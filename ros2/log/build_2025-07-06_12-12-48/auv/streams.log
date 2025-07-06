@@ -1,0 +1,29 @@
+[1.770s] Invoking command in '/home/wiredauv2024/AUV/WIRED24-25/ros2/src/auv': PYTHONPATH=/home/wiredauv2024/AUV/WIRED24-25/ros2/build/auv/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/auv build --build-base /home/wiredauv2024/AUV/WIRED24-25/ros2/build/auv/build install --record /home/wiredauv2024/AUV/WIRED24-25/ros2/build/auv/install.log --single-version-externally-managed install_data
+[2.370s] running egg_info
+[2.371s] writing ../../build/auv/auv.egg-info/PKG-INFO
+[2.371s] writing dependency_links to ../../build/auv/auv.egg-info/dependency_links.txt
+[2.372s] writing entry points to ../../build/auv/auv.egg-info/entry_points.txt
+[2.372s] writing requirements to ../../build/auv/auv.egg-info/requires.txt
+[2.372s] writing top-level names to ../../build/auv/auv.egg-info/top_level.txt
+[2.392s] reading manifest file '../../build/auv/auv.egg-info/SOURCES.txt'
+[2.393s] writing manifest file '../../build/auv/auv.egg-info/SOURCES.txt'
+[2.394s] running build
+[2.394s] running build_py
+[2.394s] copying auv/sub_draft2.py -> /home/wiredauv2024/AUV/WIRED24-25/ros2/build/auv/build/lib/auv
+[2.395s] running install
+[2.397s] running install_lib
+[2.399s] copying /home/wiredauv2024/AUV/WIRED24-25/ros2/build/auv/build/lib/auv/sub_draft2.py -> /home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/lib/python3.8/site-packages/auv
+[2.400s] byte-compiling /home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/lib/python3.8/site-packages/auv/sub_draft2.py to sub_draft2.cpython-38.pyc
+[2.402s] running install_data
+[2.403s] running install_egg_info
+[2.406s] removing '/home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/lib/python3.8/site-packages/auv-0.0.0-py3.8.egg-info' (and everything under it)
+[2.407s] Copying ../../build/auv/auv.egg-info to /home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/lib/python3.8/site-packages/auv-0.0.0-py3.8.egg-info
+[2.409s] running install_scripts
+[2.452s] Installing cam_pub script to /home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/lib/auv
+[2.453s] Installing ms_pub script to /home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/lib/auv
+[2.453s] Installing ping_pub script to /home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/lib/auv
+[2.453s] Installing sub_draft script to /home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/lib/auv
+[2.453s] Installing sub_draft2 script to /home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/lib/auv
+[2.454s] Installing vn_pub script to /home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/lib/auv
+[2.454s] writing list of installed files to '/home/wiredauv2024/AUV/WIRED24-25/ros2/build/auv/install.log'
+[2.544s] Invoked command in '/home/wiredauv2024/AUV/WIRED24-25/ros2/src/auv' returned '0': PYTHONPATH=/home/wiredauv2024/AUV/WIRED24-25/ros2/build/auv/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/auv build --build-base /home/wiredauv2024/AUV/WIRED24-25/ros2/build/auv/build install --record /home/wiredauv2024/AUV/WIRED24-25/ros2/build/auv/install.log --single-version-externally-managed install_data

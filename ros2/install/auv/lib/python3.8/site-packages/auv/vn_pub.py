@@ -12,7 +12,7 @@ class Talker(Node):		# sets up publisher as talker
 	def __init__(self):			# publisher name chatter
 		super().__init__('talker')
 		self.publisher_ = self.create_publisher(Float32, 'vn', 10)
-		self.timer = self.create_timer(0.5, self.timer_callback)  # sleeps for 0.1 seconds
+		self.timer = self.create_timer(0.1, self.timer_callback)  # sleeps for 0.1 seconds
 
 	def timer_callback(self):		# sets up message to be published
 		orientation = s.read_yaw_pitch_roll()
@@ -21,6 +21,8 @@ class Talker(Node):		# sets up publisher as talker
 		message.data = x
 		self.get_logger().info(f"Heading x = {message.data}")
 		self.publisher_.publish(message)
+		
+		
 def main(args=None):
 	rclpy.init(args=args)
 	node = Talker()

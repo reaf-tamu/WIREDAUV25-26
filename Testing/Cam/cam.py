@@ -27,7 +27,7 @@ def detect(result):
 		
 		# this can be used if you need to see what the variable options are
 		# print(result[0])
-	    
+		print(result)
 	    	# prints out every object that is detected
 	    	# will look for just one in competition
 		if predictions:
