@@ -29,5 +29,7 @@ class PIDController:
 
 		# Update previous error
 		self.previous_error = error
-
+		
+		print(f"error = {error}\nP_out = {P_out}\nI_out = {I_out}\nD_out = {D_out}\nOutput = {output}\n")
+		
 		return output
