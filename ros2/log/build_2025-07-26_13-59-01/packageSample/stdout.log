@@ -1,0 +1,4 @@
+-- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Configuring incomplete, errors occurred!
+See also "/home/wiredauv2024/AUV/WIRED24-25/ros2/build/packageSample/CMakeFiles/CMakeOutput.log".

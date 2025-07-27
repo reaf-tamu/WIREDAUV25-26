@@ -1,0 +1,70 @@
+[0.000000] (-) TimerEvent: {}
+[0.000891] (auv) JobQueued: {'identifier': 'auv', 'dependencies': OrderedDict()}
+[0.001203] (packageSample) JobQueued: {'identifier': 'packageSample', 'dependencies': OrderedDict()}
+[0.001754] (py_pubsub) JobQueued: {'identifier': 'py_pubsub', 'dependencies': OrderedDict()}
+[0.002086] (auv) JobStarted: {'identifier': 'auv'}
+[0.028120] (packageSample) JobStarted: {'identifier': 'packageSample'}
+[0.039058] (py_pubsub) JobStarted: {'identifier': 'py_pubsub'}
+[0.099046] (-) TimerEvent: {}
+[0.200233] (-) TimerEvent: {}
+[0.301268] (-) TimerEvent: {}
+[0.402373] (-) TimerEvent: {}
+[0.503408] (-) TimerEvent: {}
+[0.610576] (-) TimerEvent: {}
+[0.616109] (packageSample) JobProgress: {'identifier': 'packageSample', 'progress': 'cmake'}
+[0.710722] (-) TimerEvent: {}
+[0.744306] (packageSample) JobProgress: {'identifier': 'packageSample', 'progress': 'build'}
+[0.748269] (packageSample) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/wiredauv2024/AUV/WIRED24-25/ros2/build/packageSample', '--', '-j6', '-l6'], 'cwd': '/home/wiredauv2024/AUV/WIRED24-25/ros2/build/packageSample', 'env': OrderedDict([('NX_ROOT', '/home/wiredauv2024/.nx'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('PULSE_CLIENTCONFIG', '/home/wiredauv2024/.nx/nxdevice/D-1001-FC7852D16B5E331ADA925D6C1C83DD04/audio/client.conf'), ('MAIL', '/var/mail/wiredauv2024'), ('USER', 'wiredauv2024'), ('XDG_SESSION_TYPE', 'x11'), ('NX_SYSTEM', '/usr/NX'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/cuda-11.4/lib64:'), ('HOME', '/home/wiredauv2024'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:abstract=/tmp/dbus-Qcc5saFy3M,guid=6b0c51bcb92e04033803af8068851e38'), ('COLORTERM', 'truecolor'), ('PULSE_SCRIPT', '/home/wiredauv2024/.nx/nxdevice/D-1001-FC7852D16B5E331ADA925D6C1C83DD04/audio/default.pa'), ('LOGNAME', 'wiredauv2024'), ('PULSE_SERVER', '/home/wiredauv2024/.nx/nxdevice/D-1001-FC7852D16B5E331ADA925D6C1C83DD04/audio/native.socket'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'wiredauv2024'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', 'c1'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('PATH', '/usr/local/cuda-11.4/bin:/home/wiredauv2024/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/5104,unix/ubuntu:/tmp/.ICE-unix/5104'), ('PULSE_RUNTIME_PATH', '/run/user/1000/pulse'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b3edd476_69f7_4013_83bf_a4bb2e743753'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('PULSE_CONFIG', '/home/wiredauv2024/.nx/nxdevice/D-1001-FC7852D16B5E331ADA925D6C1C83DD04/audio/daemon.conf'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1001'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('NX_TEMP', '/tmp'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/home/wiredauv2024/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.87'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('NX_SESSION_ID', 'FC7852D16B5E331ADA925D6C1C83DD04'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/wiredauv2024/AUV/WIRED24-25/ros2/build/packageSample'), ('NX_RUNNER', '/usr/NX/bin/nxrunner'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:abstract=/tmp/dbus-Qcc5saFy3M,guid=6b0c51bcb92e04033803af8068851e38'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('NX_CONNECTION', '192.168.1.1 53959 192.168.1.2 4000'), ('NXDIR', '/usr/NX')]), 'shell': False}
+[0.811221] (-) TimerEvent: {}
+[0.913263] (-) TimerEvent: {}
+[1.014342] (-) TimerEvent: {}
+[1.115510] (-) TimerEvent: {}
+[1.216416] (-) TimerEvent: {}
+[1.317388] (-) TimerEvent: {}
+[1.418369] (-) TimerEvent: {}
+[1.519323] (-) TimerEvent: {}
+[1.573240] (packageSample) StdoutLine: {'line': b'-- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)\n'}
+[1.593793] (packageSample) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.619536] (-) TimerEvent: {}
+[1.720608] (-) TimerEvent: {}
+[1.821615] (-) TimerEvent: {}
+[1.922813] (-) TimerEvent: {}
+[2.023755] (-) TimerEvent: {}
+[2.124666] (-) TimerEvent: {}
+[2.195165] (packageSample) StderrLine: {'line': b"/usr/lib/python3/dist-packages/requests/__init__.py:89: RequestsDependencyWarning: urllib3 (2.2.2) or chardet (5.2.0) doesn't match a supported version!\n"}
+[2.196236] (packageSample) StderrLine: {'line': b'  warnings.warn("urllib3 ({}) or chardet ({}) doesn\'t match a supported "\n'}
+[2.196448] (packageSample) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[2.196595] (packageSample) StderrLine: {'line': b'  File "/opt/ros/galactic/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py", line 21, in <module>\n'}
+[2.196732] (packageSample) StderrLine: {'line': b'    from ament_package.templates import get_environment_hook_template_path\n'}
+[2.196860] (packageSample) StderrLine: {'line': b"ModuleNotFoundError: No module named 'ament_package'\n"}
+[2.224854] (-) TimerEvent: {}
+[2.290964] (packageSample) StderrLine: {'line': b'CMake Error at /opt/ros/galactic/share/ament_cmake_core/cmake/ament_cmake_package_templates-extras.cmake:41 (message):\n'}
+[2.291664] (packageSample) StderrLine: {'line': b'  execute_process(/usr/bin/python3\n'}
+[2.291833] (packageSample) StderrLine: {'line': b'  /opt/ros/galactic/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py\n'}
+[2.291980] (packageSample) StderrLine: {'line': b'  /home/wiredauv2024/AUV/WIRED24-25/ros2/build/packageSample/ament_cmake_package_templates/templates.cmake)\n'}
+[2.292118] (packageSample) StderrLine: {'line': b'  returned error code 1\n'}
+[2.292350] (packageSample) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[2.292487] (packageSample) StderrLine: {'line': b'  /opt/ros/galactic/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)\n'}
+[2.292608] (packageSample) StderrLine: {'line': b'  /opt/ros/galactic/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)\n'}
+[2.292728] (packageSample) StderrLine: {'line': b'  /opt/ros/galactic/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)\n'}
+[2.292850] (packageSample) StderrLine: {'line': b'  CMakeLists.txt:9 (find_package)\n'}
+[2.292970] (packageSample) StderrLine: {'line': b'\n'}
+[2.293133] (packageSample) StderrLine: {'line': b'\n'}
+[2.293261] (packageSample) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[2.293468] (packageSample) StdoutLine: {'line': b'See also "/home/wiredauv2024/AUV/WIRED24-25/ros2/build/packageSample/CMakeFiles/CMakeOutput.log".\n'}
+[2.308594] (packageSample) StderrLine: {'line': b'make: *** [Makefile:222: cmake_check_build_system] Error 1\n'}
+[2.315571] (packageSample) CommandEnded: {'returncode': 2}
+[2.324915] (-) TimerEvent: {}
+[2.425705] (-) TimerEvent: {}
+[2.482224] (packageSample) JobEnded: {'identifier': 'packageSample', 'rc': 2}
+[2.528081] (-) TimerEvent: {}
+[2.628999] (-) TimerEvent: {}
+[2.730170] (-) TimerEvent: {}
+[2.831053] (-) TimerEvent: {}
+[2.931940] (-) TimerEvent: {}
+[3.032838] (-) TimerEvent: {}
+[3.133999] (-) TimerEvent: {}
+[3.152166] (auv) JobEnded: {'identifier': 'auv', 'rc': 'SIGINT'}
+[3.237359] (-) TimerEvent: {}
+[3.271443] (py_pubsub) JobEnded: {'identifier': 'py_pubsub', 'rc': 'SIGINT'}
+[3.283638] (-) EventReactorShutdown: {}

@@ -109,7 +109,7 @@ while obj_cen_x != center:
 	time.sleep(0.5)
 """
 # PID to get closer
-width = 400
+width = 300
 obj_w = 0
 pid = PIDController(Kp=1.0, Ki=0.1, Kd=0.05, desire=width)
 while obj_w != width:

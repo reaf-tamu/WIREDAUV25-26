@@ -1,0 +1,741 @@
+
+No predictions found in result.
+obj_w = none
+no detection
+obj_w = 106.0
+error = 294.0
+P_out = 294.0
+I_out = 14.700000000000001
+D_out = 29.400000000000002
+Output = 338.09999999999997
+
+obj_w = 106.0
+error = 294.0
+P_out = 294.0
+I_out = 29.400000000000002
+D_out = 0.0
+Output = 323.4
+
+obj_w = 106.0
+error = 294.0
+P_out = 294.0
+I_out = 44.1
+D_out = 0.0
+Output = 338.1
+
+obj_w = 105.0
+error = 295.0
+P_out = 295.0
+I_out = 58.85
+D_out = 0.1
+Output = 353.95000000000005
+
+obj_w = 107.0
+error = 293.0
+P_out = 293.0
+I_out = 73.5
+D_out = -0.2
+Output = 366.3
+
+obj_w = 110.0
+error = 290.0
+P_out = 290.0
+I_out = 88.0
+D_out = -0.30000000000000004
+Output = 377.7
+
+obj_w = 139.0
+error = 261.0
+P_out = 261.0
+I_out = 101.05000000000001
+D_out = -2.9000000000000004
+Output = 359.15000000000003
+
+obj_w = 118.0
+error = 282.0
+P_out = 282.0
+I_out = 115.15
+D_out = 2.1
+Output = 399.25
+
+obj_w = 125.0
+error = 275.0
+P_out = 275.0
+I_out = 128.9
+D_out = -0.7000000000000001
+Output = 403.2
+
+obj_w = 114.0
+error = 286.0
+P_out = 286.0
+I_out = 143.20000000000002
+D_out = 1.1
+Output = 430.30000000000007
+
+obj_w = 114.0
+error = 286.0
+P_out = 286.0
+I_out = 157.5
+D_out = 0.0
+Output = 443.5
+
+obj_w = 113.0
+error = 287.0
+P_out = 287.0
+I_out = 171.85000000000002
+D_out = 0.1
+Output = 458.95000000000005
+
+obj_w = 157.0
+error = 243.0
+P_out = 243.0
+I_out = 184.0
+D_out = -4.4
+Output = 422.6
+
+No predictions found in result.
+obj_w = none
+no detection
+No predictions found in result.
+obj_w = none
+no detection
+No predictions found in result.
+obj_w = none
+no detection
+obj_w = 192.0
+error = 208.0
+P_out = 208.0
+I_out = 194.4
+D_out = -3.5
+Output = 398.9
+
+obj_w = 194.0
+error = 206.0
+P_out = 206.0
+I_out = 204.70000000000002
+D_out = -0.2
+Output = 410.50000000000006
+
+obj_w = 197.0
+error = 203.0
+P_out = 203.0
+I_out = 214.85000000000002
+D_out = -0.30000000000000004
+Output = 417.55
+
+obj_w = 199.0
+error = 201.0
+P_out = 201.0
+I_out = 224.9
+D_out = -0.2
+Output = 425.7
+
+obj_w = 201.0
+error = 199.0
+P_out = 199.0
+I_out = 234.85000000000002
+D_out = -0.2
+Output = 433.65000000000003
+
+obj_w = 203.0
+error = 197.0
+P_out = 197.0
+I_out = 244.70000000000002
+D_out = -0.2
+Output = 441.50000000000006
+
+obj_w = 209.0
+error = 191.0
+P_out = 191.0
+I_out = 254.25
+D_out = -0.6000000000000001
+Output = 444.65
+
+obj_w = 216.0
+error = 184.0
+P_out = 184.0
+I_out = 263.45
+D_out = -0.7000000000000001
+Output = 446.75
+
+obj_w = 224.0
+error = 176.0
+P_out = 176.0
+I_out = 272.25
+D_out = -0.8
+Output = 447.45
+
+obj_w = 234.0
+error = 166.0
+P_out = 166.0
+I_out = 280.55
+D_out = -1.0
+Output = 445.55
+
+No predictions found in result.
+obj_w = none
+no detection
+obj_w = 283.0
+error = 117.0
+P_out = 117.0
+I_out = 286.40000000000003
+D_out = -4.9
+Output = 398.50000000000006
+
+obj_w = 299.0
+error = 101.0
+P_out = 101.0
+I_out = 291.45
+D_out = -1.6
+Output = 390.84999999999997
+
+obj_w = 133.0
+error = 267.0
+P_out = 267.0
+I_out = 304.8
+D_out = 16.6
+Output = 588.4
+
+No predictions found in result.
+obj_w = none
+no detection
+No predictions found in result.
+obj_w = none
+no detection
+No predictions found in result.
+obj_w = none
+no detection
+No predictions found in result.
+obj_w = none
+no detection
+No predictions found in result.
+obj_w = none
+no detection
+No predictions found in result.
+obj_w = none
+no detection
+No predictions found in result.
+obj_w = none
+no detection
+No predictions found in result.
+obj_w = none
+no detection
+No predictions found in result.
+obj_w = none
+no detection
+No predictions found in result.
+obj_w = none
+no detection
+No predictions found in result.
+obj_w = none
+no detection
+No predictions found in result.
+obj_w = none
+no detection
+No predictions found in result.
+obj_w = none
+no detection
+obj_w = 313.0
+error = 87.0
+P_out = 87.0
+I_out = 309.15000000000003
+D_out = -18.0
+Output = 378.15000000000003
+
+obj_w = 310.0
+error = 90.0
+P_out = 90.0
+I_out = 313.65000000000003
+D_out = 0.30000000000000004
+Output = 403.95000000000005
+
+obj_w = 308.0
+error = 92.0
+P_out = 92.0
+I_out = 318.25
+D_out = 0.2
+Output = 410.45
+
+No predictions found in result.
+obj_w = none
+no detection
+obj_w = 296.0
+error = 104.0
+P_out = 104.0
+I_out = 323.45000000000005
+D_out = 1.2000000000000002
+Output = 428.65000000000003
+
+obj_w = 270.0
+error = 130.0
+P_out = 130.0
+I_out = 329.95000000000005
+D_out = 2.6
+Output = 462.55000000000007
+
+^CTraceback (most recent call last):
+  File "pid_cam.py", line 126, in <module>
+    time.sleep(0.5)
+KeyboardInterrupt
+
+wiredauv2024@ubuntu:~/AUV/WIRED24-25/Testing/pid$ python3 pid_cam.py
+/usr/lib/python3/dist-packages/requests/__init__.py:89: RequestsDependencyWarning: urllib3 (2.2.2) or chardet (5.2.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+No predictions found in result.
+obj_w = none
+no detection
+No predictions found in result.
+obj_w = none
+no detection
+No predictions found in result.
+obj_w = none
+no detection
+No predictions found in result.
+obj_w = none
+no detection
+No predictions found in result.
+obj_w = none
+no detection
+No predictions found in result.
+obj_w = none
+no detection
+No predictions found in result.
+obj_w = none
+no detection
+No predictions found in result.
+obj_w = none
+no detection
+No predictions found in result.
+obj_w = none
+no detection
+No predictions found in result.
+obj_w = none
+no detection
+No predictions found in result.
+obj_w = none
+no detection
+No predictions found in result.
+obj_w = none
+no detection
+No predictions found in result.
+obj_w = none
+no detection
+No predictions found in result.
+obj_w = none
+no detection
+No predictions found in result.
+obj_w = none
+no detection
+No predictions found in result.
+obj_w = none
+no detection
+No predictions found in result.
+obj_w = none
+no detection
+No predictions found in result.
+obj_w = none
+no detection
+No predictions found in result.
+obj_w = none
+no detection
+No predictions found in result.
+obj_w = none
+no detection
+No predictions found in result.
+obj_w = none
+no detection
+No predictions found in result.
+obj_w = none
+no detection
+No predictions found in result.
+obj_w = none
+no detection
+No predictions found in result.
+obj_w = none
+no detection
+No predictions found in result.
+obj_w = none
+no detection
+No predictions found in result.
+obj_w = none
+no detection
+No predictions found in result.
+obj_w = none
+no detection
+No predictions found in result.
+obj_w = none
+no detection
+No predictions found in result.
+obj_w = none
+no detection
+No predictions found in result.
+obj_w = none
+no detection
+No predictions found in result.
+obj_w = none
+no detection
+No predictions found in result.
+obj_w = none
+no detection
+obj_w = 93.0
+error = 207.0
+P_out = 207.0
+I_out = 10.350000000000001
+D_out = 20.700000000000003
+Output = 238.05
+
+No predictions found in result.
+obj_w = none
+no detection
+No predictions found in result.
+obj_w = none
+no detection
+No predictions found in result.
+obj_w = none
+no detection
+No predictions found in result.
+obj_w = none
+no detection
+obj_w = 126.0
+error = 174.0
+P_out = 174.0
+I_out = 19.05
+D_out = -3.3000000000000003
+Output = 189.75
+
+obj_w = 125.0
+error = 175.0
+P_out = 175.0
+I_out = 27.8
+D_out = 0.1
+Output = 202.9
+
+No predictions found in result.
+obj_w = none
+no detection
+No predictions found in result.
+obj_w = none
+no detection
+No predictions found in result.
+obj_w = none
+no detection
+No predictions found in result.
+obj_w = none
+no detection
+obj_w = 129.0
+error = 171.0
+P_out = 171.0
+I_out = 36.35
+D_out = -0.4
+Output = 206.95
+
+obj_w = 131.0
+error = 169.0
+P_out = 169.0
+I_out = 44.800000000000004
+D_out = -0.2
+Output = 213.60000000000002
+
+obj_w = 130.0
+error = 170.0
+P_out = 170.0
+I_out = 53.300000000000004
+D_out = 0.1
+Output = 223.4
+
+obj_w = 130.0
+error = 170.0
+P_out = 170.0
+I_out = 61.800000000000004
+D_out = 0.0
+Output = 231.8
+
+obj_w = 131.0
+error = 169.0
+P_out = 169.0
+I_out = 70.25
+D_out = -0.1
+Output = 239.15
+
+obj_w = 138.0
+error = 162.0
+P_out = 162.0
+I_out = 78.35000000000001
+D_out = -0.7000000000000001
+Output = 239.65000000000003
+
+obj_w = 140.0
+error = 160.0
+P_out = 160.0
+I_out = 86.35000000000001
+D_out = -0.2
+Output = 246.15000000000003
+
+obj_w = 141.0
+error = 159.0
+P_out = 159.0
+I_out = 94.30000000000001
+D_out = -0.1
+Output = 253.20000000000002
+
+obj_w = 142.0
+error = 158.0
+P_out = 158.0
+I_out = 102.2
+D_out = -0.1
+Output = 260.09999999999997
+
+obj_w = 140.0
+error = 160.0
+P_out = 160.0
+I_out = 110.2
+D_out = 0.2
+Output = 270.4
+
+obj_w = 154.0
+error = 146.0
+P_out = 146.0
+I_out = 117.5
+D_out = -1.4000000000000001
+Output = 262.1
+
+obj_w = 163.0
+error = 137.0
+P_out = 137.0
+I_out = 124.35000000000001
+D_out = -0.9
+Output = 260.45000000000005
+
+obj_w = 168.0
+error = 132.0
+P_out = 132.0
+I_out = 130.95000000000002
+D_out = -0.5
+Output = 262.45000000000005
+
+obj_w = 175.0
+error = 125.0
+P_out = 125.0
+I_out = 137.20000000000002
+D_out = -0.7000000000000001
+Output = 261.50000000000006
+
+obj_w = 184.0
+error = 116.0
+P_out = 116.0
+I_out = 143.0
+D_out = -0.9
+Output = 258.1
+
+obj_w = 197.0
+error = 103.0
+P_out = 103.0
+I_out = 148.15
+D_out = -1.3
+Output = 249.85
+
+obj_w = 207.0
+error = 93.0
+P_out = 93.0
+I_out = 152.8
+D_out = -1.0
+Output = 244.8
+
+obj_w = 216.0
+error = 84.0
+P_out = 84.0
+I_out = 157.0
+D_out = -0.9
+Output = 240.1
+
+obj_w = 224.0
+error = 76.0
+P_out = 76.0
+I_out = 160.8
+D_out = -0.8
+Output = 236.0
+
+obj_w = 226.0
+error = 74.0
+P_out = 74.0
+I_out = 164.5
+D_out = -0.2
+Output = 238.3
+
+obj_w = 236.0
+error = 64.0
+P_out = 64.0
+I_out = 167.70000000000002
+D_out = -1.0
+Output = 230.70000000000002
+
+obj_w = 247.0
+error = 53.0
+P_out = 53.0
+I_out = 170.35000000000002
+D_out = -1.1
+Output = 222.25000000000003
+
+obj_w = 259.0
+error = 41.0
+P_out = 41.0
+I_out = 172.4
+D_out = -1.2000000000000002
+Output = 212.20000000000002
+
+obj_w = 268.0
+error = 32.0
+P_out = 32.0
+I_out = 174.0
+D_out = -0.9
+Output = 205.1
+
+obj_w = 279.0
+error = 21.0
+P_out = 21.0
+I_out = 175.05
+D_out = -1.1
+Output = 194.95000000000002
+
+obj_w = 281.0
+error = 19.0
+P_out = 19.0
+I_out = 176.0
+D_out = -0.2
+Output = 194.8
+
+obj_w = 270.0
+error = 30.0
+P_out = 30.0
+I_out = 177.5
+D_out = 1.1
+Output = 208.6
+
+obj_w = 276.0
+error = 24.0
+P_out = 24.0
+I_out = 178.70000000000002
+D_out = -0.6000000000000001
+Output = 202.10000000000002
+
+obj_w = 308.0
+error = -8.0
+P_out = -8.0
+I_out = 178.3
+D_out = -3.2
+Output = 167.10000000000002
+
+obj_w = 242.0
+error = 58.0
+P_out = 58.0
+I_out = 181.20000000000002
+D_out = 6.6000000000000005
+Output = 245.8
+
+obj_w = 235.0
+error = 65.0
+P_out = 65.0
+I_out = 184.45000000000002
+D_out = 0.7000000000000001
+Output = 250.15
+
+obj_w = 234.0
+error = 66.0
+P_out = 66.0
+I_out = 187.75
+D_out = 0.1
+Output = 253.85
+
+obj_w = 318.0
+error = -18.0
+P_out = -18.0
+I_out = 186.85000000000002
+D_out = -8.4
+Output = 160.45000000000002
+
+obj_w = 307.0
+error = -7.0
+P_out = -7.0
+I_out = 186.5
+D_out = 1.1
+Output = 180.6
+
+obj_w = 284.0
+error = 16.0
+P_out = 16.0
+I_out = 187.3
+D_out = 2.3000000000000003
+Output = 205.60000000000002
+
+obj_w = 185.0
+error = 115.0
+P_out = 115.0
+I_out = 193.05
+D_out = 9.9
+Output = 317.95
+
+obj_w = 204.0
+error = 96.0
+P_out = 96.0
+I_out = 197.85000000000002
+D_out = -1.9000000000000001
+Output = 291.95000000000005
+
+obj_w = 169.0
+error = 131.0
+P_out = 131.0
+I_out = 204.4
+D_out = 3.5
+Output = 338.9
+
+obj_w = 157.0
+error = 143.0
+P_out = 143.0
+I_out = 211.55
+D_out = 1.2000000000000002
+Output = 355.75
+
+obj_w = 163.0
+error = 137.0
+P_out = 137.0
+I_out = 218.4
+D_out = -0.6000000000000001
+Output = 354.79999999999995
+
+obj_w = 150.0
+error = 150.0
+P_out = 150.0
+I_out = 225.9
+D_out = 1.3
+Output = 377.2
+
+obj_w = 131.0
+error = 169.0
+P_out = 169.0
+I_out = 234.35000000000002
+D_out = 1.9000000000000001
+Output = 405.25
+
+obj_w = 120.0
+error = 180.0
+P_out = 180.0
+I_out = 243.35000000000002
+D_out = 1.1
+Output = 424.45000000000005
+
+No predictions found in result.
+obj_w = none
+no detection
+No predictions found in result.
+obj_w = none
+no detection
+No predictions found in result.
+obj_w = none
+no detection
+No predictions found in result.
+obj_w = none
+no detection
+No predictions found in result.
+obj_w = none
+no detection
+

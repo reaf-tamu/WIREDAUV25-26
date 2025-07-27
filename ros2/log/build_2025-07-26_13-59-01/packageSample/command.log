@@ -1,0 +1,2 @@
+Invoking command in '/home/wiredauv2024/AUV/WIRED24-25/ros2/build/packageSample': NX_CONNECTION=192.168.1.1 53959 192.168.1.2 4000 /usr/bin/cmake --build /home/wiredauv2024/AUV/WIRED24-25/ros2/build/packageSample -- -j6 -l6
+Invoked command in '/home/wiredauv2024/AUV/WIRED24-25/ros2/build/packageSample' returned '2': NX_CONNECTION=192.168.1.1 53959 192.168.1.2 4000 /usr/bin/cmake --build /home/wiredauv2024/AUV/WIRED24-25/ros2/build/packageSample -- -j6 -l6

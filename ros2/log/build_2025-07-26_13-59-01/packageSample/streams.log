@@ -1,0 +1,25 @@
+[0.724s] Invoking command in '/home/wiredauv2024/AUV/WIRED24-25/ros2/build/packageSample': NX_CONNECTION=192.168.1.1 53959 192.168.1.2 4000 /usr/bin/cmake --build /home/wiredauv2024/AUV/WIRED24-25/ros2/build/packageSample -- -j6 -l6
+[1.546s] -- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+[1.566s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.168s] /usr/lib/python3/dist-packages/requests/__init__.py:89: RequestsDependencyWarning: urllib3 (2.2.2) or chardet (5.2.0) doesn't match a supported version!
+[2.168s]   warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+[2.168s] Traceback (most recent call last):
+[2.168s]   File "/opt/ros/galactic/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py", line 21, in <module>
+[2.169s]     from ament_package.templates import get_environment_hook_template_path
+[2.169s] ModuleNotFoundError: No module named 'ament_package'
+[2.263s] CMake Error at /opt/ros/galactic/share/ament_cmake_core/cmake/ament_cmake_package_templates-extras.cmake:41 (message):
+[2.264s]   execute_process(/usr/bin/python3
+[2.264s]   /opt/ros/galactic/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py
+[2.264s]   /home/wiredauv2024/AUV/WIRED24-25/ros2/build/packageSample/ament_cmake_package_templates/templates.cmake)
+[2.264s]   returned error code 1
+[2.264s] Call Stack (most recent call first):
+[2.264s]   /opt/ros/galactic/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)
+[2.264s]   /opt/ros/galactic/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)
+[2.265s]   /opt/ros/galactic/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)
+[2.265s]   CMakeLists.txt:9 (find_package)
+[2.265s] 
+[2.265s] 
+[2.265s] -- Configuring incomplete, errors occurred!
+[2.265s] See also "/home/wiredauv2024/AUV/WIRED24-25/ros2/build/packageSample/CMakeFiles/CMakeOutput.log".
+[2.281s] make: *** [Makefile:222: cmake_check_build_system] Error 1
+[2.288s] Invoked command in '/home/wiredauv2024/AUV/WIRED24-25/ros2/build/packageSample' returned '2': NX_CONNECTION=192.168.1.1 53959 192.168.1.2 4000 /usr/bin/cmake --build /home/wiredauv2024/AUV/WIRED24-25/ros2/build/packageSample -- -j6 -l6

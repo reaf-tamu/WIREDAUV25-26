@@ -1,0 +1,41 @@
+[4.505s] Invoking command in '/home/wiredauv2024/AUV/WIRED24-25/ros2/src/auv': NX_CONNECTION=192.168.1.1 53959 192.168.1.2 4000 PYTHONPATH=/home/wiredauv2024/AUV/WIRED24-25/ros2/build/auv/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/auv build --build-base /home/wiredauv2024/AUV/WIRED24-25/ros2/build/auv/build install --record /home/wiredauv2024/AUV/WIRED24-25/ros2/build/auv/install.log --single-version-externally-managed install_data
+[5.333s] running egg_info
+[5.378s] writing ../../build/auv/auv.egg-info/PKG-INFO
+[5.379s] writing dependency_links to ../../build/auv/auv.egg-info/dependency_links.txt
+[5.380s] writing entry points to ../../build/auv/auv.egg-info/entry_points.txt
+[5.381s] writing requirements to ../../build/auv/auv.egg-info/requires.txt
+[5.381s] writing top-level names to ../../build/auv/auv.egg-info/top_level.txt
+[6.040s] reading manifest file '../../build/auv/auv.egg-info/SOURCES.txt'
+[6.042s] writing manifest file '../../build/auv/auv.egg-info/SOURCES.txt'
+[6.042s] running build
+[6.043s] running build_py
+[6.043s] copying logic/vn_log.py -> /home/wiredauv2024/AUV/WIRED24-25/ros2/build/auv/build/lib/logic
+[6.184s] copying logic/__init__.py -> /home/wiredauv2024/AUV/WIRED24-25/ros2/build/auv/build/lib/logic
+[6.184s] copying logic/vn_logic.py -> /home/wiredauv2024/AUV/WIRED24-25/ros2/build/auv/build/lib/logic
+[6.185s] copying logic/cam_log.py -> /home/wiredauv2024/AUV/WIRED24-25/ros2/build/auv/build/lib/logic
+[6.185s] copying auv/ms_pub.py -> /home/wiredauv2024/AUV/WIRED24-25/ros2/build/auv/build/lib/auv
+[6.186s] copying auv/vn_pub.py -> /home/wiredauv2024/AUV/WIRED24-25/ros2/build/auv/build/lib/auv
+[6.186s] copying auv/__init__.py -> /home/wiredauv2024/AUV/WIRED24-25/ros2/build/auv/build/lib/auv
+[6.187s] copying auv/sub_draft2.py -> /home/wiredauv2024/AUV/WIRED24-25/ros2/build/auv/build/lib/auv
+[6.187s] copying auv/sub_draft.py -> /home/wiredauv2024/AUV/WIRED24-25/ros2/build/auv/build/lib/auv
+[6.187s] copying auv/cam_pub.py -> /home/wiredauv2024/AUV/WIRED24-25/ros2/build/auv/build/lib/auv
+[6.187s] copying auv/ping_pub.py -> /home/wiredauv2024/AUV/WIRED24-25/ros2/build/auv/build/lib/auv
+[6.188s] running install
+[6.200s] running install_lib
+[6.249s] copying /home/wiredauv2024/AUV/WIRED24-25/ros2/build/auv/build/lib/auv/sub_draft2.py -> /home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/lib/python3.8/site-packages/auv
+[6.250s] byte-compiling /home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/lib/python3.8/site-packages/auv/sub_draft2.py to sub_draft2.cpython-38.pyc
+[6.253s] running install_data
+[6.253s] copying resource/auv -> /home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/share/ament_index/resource_index/packages
+[6.253s] copying package.xml -> /home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/share/auv
+[6.254s] running install_egg_info
+[6.307s] removing '/home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/lib/python3.8/site-packages/auv-0.0.0-py3.8.egg-info' (and everything under it)
+[6.307s] Copying ../../build/auv/auv.egg-info to /home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/lib/python3.8/site-packages/auv-0.0.0-py3.8.egg-info
+[6.392s] running install_scripts
+[6.609s] Installing cam_pub script to /home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/lib/auv
+[6.610s] Installing ms_pub script to /home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/lib/auv
+[6.610s] Installing ping_pub script to /home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/lib/auv
+[6.610s] Installing sub_draft script to /home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/lib/auv
+[6.611s] Installing sub_draft2 script to /home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/lib/auv
+[6.611s] Installing vn_pub script to /home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/lib/auv
+[6.613s] writing list of installed files to '/home/wiredauv2024/AUV/WIRED24-25/ros2/build/auv/install.log'
+[6.747s] Invoked command in '/home/wiredauv2024/AUV/WIRED24-25/ros2/src/auv' returned '0': NX_CONNECTION=192.168.1.1 53959 192.168.1.2 4000 PYTHONPATH=/home/wiredauv2024/AUV/WIRED24-25/ros2/build/auv/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wiredauv2024/AUV/WIRED24-25/ros2/install/auv/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/auv build --build-base /home/wiredauv2024/AUV/WIRED24-25/ros2/build/auv/build install --record /home/wiredauv2024/AUV/WIRED24-25/ros2/build/auv/install.log --single-version-externally-managed install_data

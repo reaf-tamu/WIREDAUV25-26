@@ -1,3 +1,6 @@
+# run this in terminal
+# source install/setup.bash
+
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import String, Float32, Bool
@@ -105,6 +108,7 @@ def main(args=None):
 			
 			# get result from pub and unstring
 			result_str = sub.get_cam()
+			
 			result = json.loads(result_str)
 			# look for buoy
 			obj_cen_x, obj_cen_y, obj_w, obj_h = detect(result, "buoy")
