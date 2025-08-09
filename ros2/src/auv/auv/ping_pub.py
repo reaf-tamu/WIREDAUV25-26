@@ -13,10 +13,10 @@ myPing.set_ping_interval(29)
 myPing.set_speed_of_sound(1500)
 
 
-class Talker(Node):	# sets up publisher as talker
+class Pinger(Node):	# sets up publisher as talker
     def __init__(self):			# publisher name chatter
-        super().__init__('talker')
-        self.publisher_ = self.create_publisher(String, 'chatter', 10)
+        super().__init__('pinger_publisher')
+        self.publisher_ = self.create_publisher(String, 'ping_sub', 10)
         self.timer = self.create_timer(0.1, self.timer_callback)  # sleeps for 0.1 seconds
 
     def timer_callback(self):		# sets up message to be published
