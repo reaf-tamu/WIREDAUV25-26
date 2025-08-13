@@ -26,6 +26,7 @@ setup(
         'ping_pub = auv.ping_pub:main',
         'sub_draft = auv.sub_draft:main',
         'sub_draft2 = auv.sub_draft2:main',
+        'vertical_sub = auv.vertical_sub:main',
         ],
     },
 )
