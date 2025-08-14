@@ -9,6 +9,7 @@ import threading
 import json
 
 from logic.ping_log import check_depth
+from speeds.py import hover, forward, down, up
 
 class Listener(Node):
 	def __init__(self):
@@ -78,7 +79,12 @@ def main(args=None):
 			# result = json.loads(result_str)
 
      		# maintain depth
-      		check_depth(16, 1, ping)
+      		if check_depth(16, 1, ping) == "D":
+				down()
+			elif check_depth(16, 1, ping) == "U":
+				up()
+			else:
+				hover()
 			time.sleep(0.5)
 		
 		
