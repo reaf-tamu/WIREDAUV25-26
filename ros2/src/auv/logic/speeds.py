@@ -55,3 +55,11 @@ def down():
 
 def up():
 	print("going up")
+	A2.setSpeed(80)
+	A3.setSpeed(80)
+	M2.setSpeed(80)
+	M3.setSpeed(80)
+	A2.run()
+	A3.run()
+	M2.run()
+	M3.run()
