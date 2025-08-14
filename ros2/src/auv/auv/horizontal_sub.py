@@ -83,11 +83,36 @@ def main(args=None):
     # main loop
 		vn_x, ms = sub.get_data()
 		while ms == False:
-			vn_x, ms = sub.get_data()
+			# get camera from pub and unstring
+			result_str = sub.get_cam()
+			result = json.loads(result_str)
+			
+			# look for gate middle and right
+			gm_cen_x, gm_cen_y, gm_w, gm_h = detect(result, "gate_m")
+			gr_cen_x, gr_cen_y, gr_w, gr_h = detect(result, "gate_r")
+
+			# if neither object is detected, spin
+			# elif only gm is detected, move to the right
+			# elif only gr is detected, move to the left
+			# elif/else both are detected, more logic
+				# navigate to center between objects using cen_x values
+				# save heading as vn origin
+				# use vectornav to go straight using this logic
+				check_vn(vn_x, origin, 10)
+				# if not centered, it needs to restart this indented section
+			# when it no longer detects gate bc it is passing it, have it go straight for a few seconds longer to pass under
+			
+			# we will use similar logic for slaloms
+			# wait to code this until we know it works for gate
+			
 			
 
-
+			
+			# last line of main loop
+			vn_x, ms = sub.get_data() # checks mission switch status at end of loop
+			time.sleep (0.5)
 		
+
 		
 		
 		# stops code after first press
