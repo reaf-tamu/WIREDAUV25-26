@@ -8,8 +8,7 @@ import time
 import threading
 import json
 
-from logic.vn_log import check_vn
-from logic.cam_log import detect, nav_obj
+from logic.ping_log import check_depth
 
 class Listener(Node):
 	def __init__(self):
@@ -18,7 +17,7 @@ class Listener(Node):
 		self.ping_sub = self.create_subscription(
 			Float32,
 			'ping',
-			self.vn_data,
+			self.ping_data,
 			10)
 			
 		self.ms_sub = self.create_subscription(
@@ -37,7 +36,6 @@ class Listener(Node):
 	def ms_data(self, msg):
 		self.ms = msg.data
 
-
 	def get_data(self):
 		return self.ping, self.ms
 
@@ -46,8 +44,7 @@ class Listener(Node):
 def main(args=None):
 	rclpy.init(args=args)
 	sub = Listener()
-	
-	
+		
 	# runs rclpy.spin
 	ros_thread = threading.Thread(target=rclpy.spin, args=(sub,), daemon=True)
 	ros_thread.start()
@@ -71,21 +68,21 @@ def main(args=None):
 	# begin  loop
 	while True:
     # main loop
-		vn_x, ms = sub.get_data()
+		ping, ms = sub.get_data()
 		while ms == False:
 			ping, ms = sub.get_data()
 			
 			# get result from pub and unstring
-      # will I need to do this for pinger?
+      		# will I need to do this for pinger?
 			# result_str = sub.get_cam()
 			# result = json.loads(result_str)
 
-      # maintain depth
-      check_depth(16, 1, ping)
+     		# maintain depth
+      		check_depth(16, 1, ping)
 			time.sleep(0.5)
 		
 		
-		
+	
 		# stops code after first press
 		print("stopping code")
 		time.sleep(3)	
