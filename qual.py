@@ -71,15 +71,58 @@ time.sleep(5)  # Wait 5 seconds for ESC to sound (listen for 2 beeps)
 
 
 # run thrusters forward for 5 seconds, reverse for 5 seconds
+#Add in going and staying down while going forward
+
+print("Mission switch activating…")
+print(ms)
+while (ms == False):
+	print(ms)
+	ping, ms = sub.get_data()
+	time.sleep(0.1)
+print("Beginning code in 3 seconds")
+time.sleep(3)
+	
+	
+	# begin  loop
 while True:
-	# forward
-	A1.set_speed(100)  
-	A1.run()
-	A4.set_speed(100)
-	A4.run()
-	M1.set_speed(100)  
-	M1.run()
-	M4.set_speed(100)
-	M4.run()
-	print(f"Foward thruster speeds: {A1.speed}, {A4.speed}, {M1.speed}, {M4.speed}")
-	time.sleep(5)
+# main loop
+	#stay down
+	ms = sub.get_data()
+	while ms == False:
+		ms = sub.get_data()
+		if check_depth(16, 1, ping) == "D":
+			down()
+		elif check_depth(16, 1, ping) == "U":
+			up()
+		else:
+			hover()
+	
+		# forward
+		A1.set_speed(100)  
+		A1.run()
+		A4.set_speed(100)
+		A4.run()
+		M1.set_speed(100)  
+		M1.run()
+		M4.set_speed(100)
+		M4.run()
+		print(f"Foward thruster speeds: {A1.speed}, {A4.speed}, {M1.speed}, {M4.speed}")
+		time.sleep(5)
+		
+	
+	
+	# stops code after first press
+	print("stopping code")
+	time.sleep(3)	
+	count = 0
+		
+	# waiting loop, press button again to restart
+	ms = sub.get_data()
+	while (ms == False):
+		print(ms)
+		ms = sub.get_data()
+		time.sleep(0.1)
+		
+	print("restarting code in 3 seconds")
+	time.sleep(3)
+
