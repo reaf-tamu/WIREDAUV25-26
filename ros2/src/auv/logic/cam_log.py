@@ -90,17 +90,22 @@ def nav_obj(x,y, bound, c_h = 376, c_w = 672):
 		print("S")
 
 def between_obj(mx, rx, bound):
+	# neither is detected, spin
 	if ((mx == None) and (rx == None)):
 		motion = "R"
+	# only middle detected, turn right
 	elif ((mx != None) and (rx == None)):
 		motion = "R"
+	# only right detect, turn left
 	elif ((mx == None) and (rx != None)):
 		motion = "L"
+	# both are detected
 	else:
 		target = (mx + rx) / 2.0
 		left_mid = (672/2) - bound
 		right_mid = (672/2) + bound
-		
+
+		# stay within center bound
 		if x < left_mid:
 			motion = "R"
 		elif x > right_mid:
