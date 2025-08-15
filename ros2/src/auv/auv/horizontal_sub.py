@@ -9,7 +9,8 @@ import threading
 import json
 
 from logic.vn_log import check_vn
-from logic.cam_log import detect, nav_obj
+from logic.cam_log import detect, between_obj
+from speeds import thrusters
 
 class Listener(Node):
 	def __init__(self):
@@ -91,16 +92,29 @@ def main(args=None):
 			gm_cen_x, gm_cen_y, gm_w, gm_h = detect(result, "gate_m")
 			gr_cen_x, gr_cen_y, gr_w, gr_h = detect(result, "gate_r")
 
-			# if neither object is detected, spin
-			# elif only gm is detected, move to the right
-			# elif only gr is detected, move to the left
-			# elif/else both are detected, more logic
-				# navigate to center between objects using cen_x values
-				# save heading as vn origin
-				# use vectornav to go straight using this logic
-				check_vn(vn_x, origin, 10)
-				# if not centered, it needs to restart this indented section
-			# when it no longer detects gate bc it is passing it, have it go straight for a few seconds longer to pass under
+			# navigate between objects
+			action = between_obj(gm_cen_x, gr_cen_x, bound = 10)
+			print(f"Cam action = {action}")
+
+			# use vnav, if not, control thrusters
+			if action == "vn":
+				heading, ms = sub.get_data()
+			else:
+				thrusters(action)
+			
+			# use vectornav to run thrsuters straight
+			while action == "vn":
+				action = between_obj(gm_cen_x, gr_cen_x, bound = 10)
+				vn_x, ms = sub.get_data()
+				
+				vn_action = check_vn(heading, vn_x, bound = 10)
+				print(f"Vnav action = {vn_action}")
+
+				# thrusters
+				thrusters(vn_action)
+
+
+			
 			
 			# we will use similar logic for slaloms
 			# wait to code this until we know it works for gate
