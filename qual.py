@@ -1,5 +1,17 @@
 import time
 from adafruit_servokit import ServoKit
+import time
+import Jetson.GPIO as GPIO
+from adafruit_servokit import ServoKit
+
+from speeds import up, down, hover
+from ping_log import check_depth
+
+GPIO.cleanup()
+# sets up mission switch
+pin_number = 32	# what pin number is it connected to, needs to be a GPIO pin found on pinout
+GPIO.setmode(GPIO.BOARD)
+GPIO.setup(pin_number, GPIO.IN)	# the button is an input
 
 # Initialize PCA9685 with 16 channels,
 kit = ServoKit(channels=16)
@@ -70,26 +82,20 @@ M4.run()
 time.sleep(5)  # Wait 5 seconds for ESC to sound (listen for 2 beeps)
 
 
-# run thrusters forward for 5 seconds, reverse for 5 seconds
-#Add in going and staying down while going forward
-
 print("Mission switch activating…")
-print(ms)
-while (ms == False):
-	print(ms)
-	ping, ms = sub.get_data()
+print(GPIO.input(pin_number))
+while (GPIO.input(pin_number) == GPIO.LOW):
+	print(GPIO.input(pin_number))
 	time.sleep(0.1)
 print("Beginning code in 3 seconds")
 time.sleep(3)
 	
 	
-	# begin  loop
+# begin  loop
 while True:
-# main loop
+	# main loop
 	#stay down
-	ms = sub.get_data()
-	while ms == False:
-		ms = sub.get_data()
+	while (GPIO.input(pin_number) == GPIO.LOW):
 		if check_depth(16, 1, ping) == "D":
 			down()
 		elif check_depth(16, 1, ping) == "U":
@@ -111,16 +117,30 @@ while True:
 		
 	
 	
-	# stops code after first press
+	# stops code and thrusters after first press
 	print("stopping code")
+	A1.set_speed(90)
+	A1.run()
+	A2.set_speed(90)
+	A2.run()
+	A3.set_speed(90)
+	A3.run()
+	A4.set_speed(90)
+	A4.run()
+	M1.set_speed(90)
+	M1.run()
+	M2.set_speed(90)
+	M2.run()
+	M3.set_speed(90)
+	M3.run()
+	M4.set_speed(90)
+	M4.run()
 	time.sleep(3)	
 	count = 0
 		
 	# waiting loop, press button again to restart
-	ms = sub.get_data()
-	while (ms == False):
-		print(ms)
-		ms = sub.get_data()
+	while (GPIO.input(pin_number) == GPIO.LOW):
+		GPIO.input(pin_number)
 		time.sleep(0.1)
 		
 	print("restarting code in 3 seconds")
