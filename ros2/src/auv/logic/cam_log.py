@@ -111,6 +111,6 @@ def between_obj(mx, rx, bound):
 		elif x > right_mid:
 			motion = "L"
 		else:
-			motion = "F"
+			motion = "vn"
 	
 	return motion
