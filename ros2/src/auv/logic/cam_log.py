@@ -59,22 +59,14 @@ def detect(result, goal):
 				
 				else:
 					print(f"No '{goal}' found in result.")
-					obj_cen_x = "none"
-					obj_cen_y = "none"
-					obj_w = "none"
-					obj_h = "none"
+					obj_cen_x = obj_cen_y = obj_w = obj_h = None
+
 		else:
 			print(f"No predictions found in result.")
-			obj_cen_x = "none"
-			obj_cen_y = "none"
-			obj_w = "none"
-			obj_h = "none"
+			obj_cen_x = obj_cen_y = obj_w = obj_h = None
 	else:
 		print("No 'output' found in result.")
-		obj_cen_x = "none"
-		obj_cen_y = "none"
-		obj_w = "none"
-		obj_h = "none"
+		obj_cen_x = obj_cen_y = obj_w = obj_h = None
 	# print()	# give a blank line to seperate each image
 	return obj_cen_x, obj_cen_y, obj_w, obj_h
 
@@ -90,12 +82,30 @@ def nav_obj(x,y, bound, c_h = 376, c_w = 672):
 	left_mid = mid - bound
 	right_mid = mid + bound
 	
-	if x == "none":
-		print("R")	# turn to find object, may need to go forward as well
-	elif x < left_mid:
+	if x < left_mid:
 		print("R")
 	elif x > right_mid:
 		print("L")
 	else:
 		print("S")
 
+def between_obj(mx, rx, bound):
+	if ((mx == None) and (rx == None)):
+		motion = "R"
+	elif ((mx != None) and (rx == None)):
+		motion = "R"
+	elif ((mx == None) and (rx != None)):
+		motion = "L"
+	else:
+		target = (mx + rx) / 2.0
+		left_mid = (672/2) - bound
+		right_mid = (672/2) + bound
+		
+		if x < left_mid:
+			motion = "R"
+		elif x > right_mid:
+			motion = "L"
+		else:
+			motion = "F"
+	
+	return motion
