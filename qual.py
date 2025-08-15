@@ -1,11 +1,12 @@
 import time
 from adafruit_servokit import ServoKit
-import time
 import Jetson.GPIO as GPIO
 from adafruit_servokit import ServoKit
+from brping import Ping1D
 
 from speeds import up, down, hover
 from ping_log import check_depth
+
 
 GPIO.cleanup()
 # sets up mission switch
@@ -13,9 +14,19 @@ pin_number = 32	# what pin number is it connected to, needs to be a GPIO pin fou
 GPIO.setmode(GPIO.BOARD)
 GPIO.setup(pin_number, GPIO.IN)	# the button is an input
 
+
+# connect to pinger
+myPing = Ping1D()
+myPing.connect_serial("/dev/ttyUSB1", 115200)
+if myPing.initialize() is False:
+    print("Failed to initialize Ping!")
+    exit(1)
+myPing.set_ping_interval(29)
+myPing.set_speed_of_sound(1500)
+
+
 # Initialize PCA9685 with 16 channels,
 kit = ServoKit(channels=16)
-
 #Set up thrusters
 A1 = kit.servo[12].angle = 90 # this one works
 A2 = kit.servo[13].angle = 90
@@ -96,6 +107,8 @@ while True:
 	# main loop
 	#stay down
 	while (GPIO.input(pin_number) == GPIO.LOW):
+		data = myPing.get_distance_simple()
+		ping = data['distance']
 		if check_depth(16, 1, ping) == "D":
 			down()
 		elif check_depth(16, 1, ping) == "U":
