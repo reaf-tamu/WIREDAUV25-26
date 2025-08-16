@@ -110,21 +110,21 @@ while True:
 	while (GPIO.input(pin_number) == GPIO.LOW):
 		data = myPing.get_distance_simple()
 		ping = data['distance']
-		if check_depth(16, 1, ping) == "D":
+		if check_depth(2, 1, ping) == "D":
 			down()
-		elif check_depth(16, 1, ping) == "U":
-			up()
+		elif check_depth(2, 1, ping) == "U":
+			continue
 		else:
 			hover()
 	
 		# forward
-		A1.set_speed(100)  
+		A1.set_speed(110)  
 		A1.run()
-		A4.set_speed(100)
+		A4.set_speed(67)
 		A4.run()
-		M1.set_speed(100)  
+		M1.set_speed(110)  
 		M1.run()
-		M4.set_speed(100)
+		M4.set_speed(70)
 		M4.run()
 		print(f"Foward thruster speeds: {A1.speed}, {A4.speed}, {M1.speed}, {M4.speed}")
 		time.sleep(5)

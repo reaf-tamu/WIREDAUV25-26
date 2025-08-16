@@ -77,7 +77,7 @@ M3.run()
 M4.set_speed(90)
 M4.run()
 
-"""
+
 time.sleep(3)  # Wait 5 seconds for ESC to sound (listen for 2 beeps)
 
 
@@ -95,35 +95,38 @@ while True:
 	while (GPIO.input(pin_number) == GPIO.LOW):
 		# down
 		print("going down")
-		A2.set_speed(90)
+		A2.set_speed(75)
 		A2.run()
-		A3.set_speed(90)
+		A3.set_speed(75)
 		A3.run()
-		M2.set_speed(90)
+		M2.set_speed(75)
 		M2.run()
-		M3.set_speed(90)
+		M3.set_speed(75)
 		M3.run()
-		time.sleep(2)
+		time.sleep(3.5)
 		while True:
+		#freshwater pool -- can maybe make hovering higher
 			print("hovering")
-			A2.set_speed(90)
+			A2.set_speed(82)
 			A2.run()
-			A3.set_speed(90)
+			A3.set_speed(82)
 			A3.run()
-			M2.set_speed(87)
+			M2.set_speed(82)
 			M2.run()
-			M3.set_speed(87)
+			M3.set_speed(82)
 			M3.run()
 			
 			# forward
+			#A1 is much stronger than A4
+			#m1 and m4 are about the same, m4 slightly weaker
 			print("forward")
-			A1.set_speed(100)  
+			A1.set_speed(98)  
 			A1.run()
-			A4.set_speed(80)
+			A4.set_speed(77)
 			A4.run()
-			M1.set_speed(100)  
+			M1.set_speed(101)  
 			M1.run()
-			M4.set_speed(80)
+			M4.set_speed(79)
 			M4.run()
 		
 	time.sleep(3)	
@@ -230,4 +233,4 @@ while True:
 	M3.run()
 	print(f"CW thruster speeds: {A2.speed}, {A3.speed}, {M2.speed}, {M3.speed}")
 	time.sleep(5)
-"""
+'''

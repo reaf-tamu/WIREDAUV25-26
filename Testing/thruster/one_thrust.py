@@ -6,7 +6,7 @@ kit = ServoKit(channels=16)
 
 #Set correct PWM range for ESCs: 1100–1900 µs,
 #change index
-A1 = kit.servo[5].angle = 90 # this one works
+A1 = kit.servo[12].angle = 90 # this one works
 # A1 = kit.servo[2].set_pulse_width_range(1100, 1900)
 
 
@@ -31,7 +31,7 @@ class Motor:
 
 # Initialize A1 on channel 7 (ESC signal wire is connected here),
 #change index
-A1 = Motor(5)
+A1 = Motor(12)
 
 
 # STEP 1: ESC Initialization,
