@@ -20,7 +20,9 @@ def combine(frame):
 	alpha = 0.5  # Transparency factor
 	combined_image = cv2.addWeighted(left_image, alpha, right_image, 1 - alpha, 0)
 
-	return combined_image
+	rotated = cv2.rotate(combined_image, cv2.ROTATE_180)
+
+	return rotated
 	
 
 	
