@@ -1,3 +1,12 @@
+
+def thrusters(action):
+	if action == "L":
+		left()
+	elif action == "R":
+		right()
+	elif action == "F":
+		forward()
+
 def hover():
 	print("hovering")
 	A2.setSpeed(95)

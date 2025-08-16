@@ -13,21 +13,21 @@ def check_vn(heading, origin, bound):
 		middle = origin - 180
 		# right_range = (origin + 180) - 360
 		if (left_bound <= heading <= right_bound):
-			print("S")
+			motion = "F"
 		else:
 			if (middle < heading <= origin):
-				print("R")
+				motion = "R"
 			else:
-				print("L")
+				motion = "L"
 	elif origin < 0:
 		# left_range = (origin - 180) + 360
 		middle = origin + 180
 		if (left_bound <= heading <= right_bound):
-			print("S")
+			motion = "F"
 		else:
 			if (middle > heading >= origin):
-				print("L")
+				motion = "L"
 			else:
-				print("R")
-	print()
+				motion = "R"
+	return motion
 
