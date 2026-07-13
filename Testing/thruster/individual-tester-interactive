@@ -1,0 +1,86 @@
+import time
+from adafruit_servokit import ServoKit
+
+# Initialize PCA9685 with 16 channels
+kit = ServoKit(channels=16)
+
+class Motor:
+    def __init__(self, channel):
+        self.channel = channel
+        self.speed = 90  # Default to neutral (1500 µs)
+        self.prev_speed = None  # Force update on first run
+        
+        # Set correct PWM range for ESCs: 1100–1900 µs
+        # This ensures 90° maps perfectly to 1500 µs (neutral/stop)
+        kit.servo[self.channel].set_pulse_width_range(1100, 1900)
+
+    def set_speed(self, angle):
+        self.speed = angle
+
+    def run(self):
+        if self.prev_speed != self.speed:
+            print(f"Sending PWM: {self.speed}° to Channel {self.channel}")
+            kit.servo[self.channel].angle = self.speed
+            self.prev_speed = self.speed
+
+    def stop(self):
+        self.set_speed(90)
+        self.run()
+
+
+# --- Interactive Multi-Thruster Test Routine ---
+if __name__ == "__main__":
+    print("=========================================")
+    print("      AUV THRUSTER INDIVIDUAL TESTER      ")
+    print("=========================================")
+    print("Ensure the main thruster battery is disconnected until")
+    print("the script initializes the channel to 90°.")
+    print("-----------------------------------------")
+
+    try:
+        while True:
+            # Ask the user which channel to test
+            user_input = input("\nEnter PCA9685 channel to test (0-15) or 'q' to quit: ").strip()
+            
+            if user_input.lower() == 'q':
+                print("Exiting test suite.")
+                break
+                
+            try:
+                channel = int(user_input)
+                if not (0 <= channel <= 15):
+                    print("Error: Invalid channel! Please choose a number between 0 and 15.")
+                    continue
+            except ValueError:
+                print("Error: Please enter a valid integer channel number.")
+                continue
+
+            print(f"\n--- Starting Test on Channel {channel} ---")
+            thruster = Motor(channel)
+
+            # STEP 1: ESC Initialization / Arming
+            print("Step 1: Arming ESC with neutral 1500 µs (90°) signal...")
+            thruster.set_speed(90)
+            thruster.run()
+            print("-> Waiting 5 seconds for ESC to arm (Listen for beeps)...")
+            time.sleep(5)
+
+            # STEP 2: Spin Test (Reverse)
+            print("Step 2: Spinning thruster in reverse (80°)...")
+            thruster.set_speed(80)
+            thruster.run()
+            time.sleep(1.5)  # Let it spin briefly
+
+            # STEP 3: Spin Test (Forward)
+            print("Step 3: Spinning thruster forward (100°)...")
+            thruster.set_speed(100)
+            thruster.run()
+            time.sleep(1.5)
+
+            # STEP 4: Stop & Cleanup
+            print("Step 4: Stopping thruster...")
+            thruster.stop()
+            print(f"--- Channel {channel} test complete! ---")
+
+    except KeyboardInterrupt:
+        print("\n\nTesting interrupted by user (Ctrl+C). Safely exiting.")
