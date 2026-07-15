@@ -3,7 +3,6 @@ from motors import initialize_escs, stop_all_motors
 # Assuming your motors file has a function to set servo angles directly
 # from motors import set_all_thrusters 
 
-STARTUP_WAIT = 5
 
 print(f"Waiting {STARTUP_WAIT} seconds...")
 time.sleep(STARTUP_WAIT)
