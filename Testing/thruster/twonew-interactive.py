@@ -1,0 +1,137 @@
+import time
+from adafruit_servokit import ServoKit
+
+# Initialize PCA9685 with 16 channels
+kit = ServoKit(channels=16)
+
+
+class Motor:
+    def __init__(self, channel):
+        self.channel = channel
+        self.speed = 90
+        self.prev_speed = None
+
+        # ESC PWM range: 1100–1900 µs
+        # 90 degrees maps to approximately 1500 µs, which is neutral.
+        kit.servo[self.channel].set_pulse_width_range(1100, 1900)
+
+    def set_speed(self, angle):
+        self.speed = angle
+
+    def run(self):
+        if self.prev_speed != self.speed:
+            print(
+                f"Sending PWM: {self.speed}° "
+                f"to Channel {self.channel}"
+            )
+            kit.servo[self.channel].angle = self.speed
+            self.prev_speed = self.speed
+
+    def stop(self):
+        self.set_speed(90)
+        self.run()
+
+
+# --- Interactive Multi-Thruster Test Routine ---
+if __name__ == "__main__":
+    print("=========================================")
+    print("      AUV THRUSTER INDIVIDUAL TESTER !!!!!!!!!!!!!!!!!!!    ")
+    print("=========================================")
+    print("Ensure the main thruster battery is disconnected until")
+    print("the script initializes the channel to 90°.")
+    print("-----------------------------------------")
+
+    active_thruster = None
+
+    try:
+        while True:
+            # Ask which channel to test
+            user_input = input(
+                "\nEnter PCA9685 channel to test (0-15) "
+                "or 'q' to quit: "
+            ).strip()
+
+            if user_input.lower() == "q":
+                print("Exiting test suite.")
+                break
+
+            try:
+                channel = int(user_input)
+
+                if not 0 <= channel <= 15:
+                    print(
+                        "Error: Please choose a channel "
+                        "between 0 and 15."
+                    )
+                    continue
+
+            except ValueError:
+                print("Error: Please enter a valid channel number.")
+                continue
+
+            # Ask how long the thruster should run
+            duration_input = input(
+                "Enter how many seconds the thruster should run: "
+            ).strip()
+
+            try:
+                run_time = float(duration_input)
+
+                if run_time <= 0:
+                    print("Error: Run time must be greater than 0.")
+                    continue
+
+            except ValueError:
+                print(
+                    "Error: Please enter a valid number of seconds, "
+                    "such as 3 or 2.5."
+                )
+                continue
+
+            print(f"\n--- Starting Test on Channel {channel} ---")
+            print(f"Run time: {run_time} seconds")
+
+            active_thruster = Motor(channel)
+
+            # STEP 1: ESC Initialization / Arming
+            print(
+                "Step 1: Arming ESC with neutral "
+                "1500 µs (90°) signal..."
+            )
+            active_thruster.set_speed(90)
+            active_thruster.run()
+
+            print(
+                "Waiting 5 seconds for ESC to arm "
+                "(listen for beeps)..."
+            )
+            time.sleep(5)
+
+            # STEP 2: Forward Spin Test
+            print(
+                f"Step 2: Spinning thruster forward at 100° "
+                f"for {run_time} seconds..."
+            )
+            active_thruster.set_speed(100)
+            active_thruster.run()
+
+            time.sleep(run_time)
+
+            # STEP 3: Stop
+            print("Step 3: Stopping thruster...")
+            active_thruster.stop()
+
+            print(f"--- Channel {channel} test complete! ---")
+            active_thruster = None
+
+    except KeyboardInterrupt:
+        print("\nTesting interrupted by user.")
+
+    finally:
+        # Stop the active thruster even if Ctrl+C is pressed while spinning
+        if active_thruster is not None:
+            print("Sending neutral signal to active thruster...")
+            active_thruster.stop()
+            time.sleep(1)
+
+        print("Safely exiting.")
