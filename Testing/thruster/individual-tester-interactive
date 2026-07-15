@@ -75,7 +75,7 @@ if __name__ == "__main__":
             print("Step 3: Spinning thruster forward (100°)...")
             thruster.set_speed(100)
             thruster.run()
-            time.sleep(3)
+            time.sleep(10)
 
             # STEP 4: Stop & Cleanup
             print("Step 4: Stopping thruster...")
