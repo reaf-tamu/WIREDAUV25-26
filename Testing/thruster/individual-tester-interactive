@@ -66,16 +66,16 @@ if __name__ == "__main__":
             time.sleep(5)
 
             # STEP 2: Spin Test (Reverse)
-            print("Step 2: Spinning thruster in reverse (80°)...")
-            thruster.set_speed(80)
-            thruster.run()
-            time.sleep(1.5)  # Let it spin briefly
+            # print("Step 2: Spinning thruster in reverse (80°)...")
+            # thruster.set_speed(80)
+            # thruster.run()
+            # time.sleep(3)  # Let it spin briefly
 
             # STEP 3: Spin Test (Forward)
             print("Step 3: Spinning thruster forward (100°)...")
             thruster.set_speed(100)
             thruster.run()
-            time.sleep(1.5)
+            time.sleep(3)
 
             # STEP 4: Stop & Cleanup
             print("Step 4: Stopping thruster...")
