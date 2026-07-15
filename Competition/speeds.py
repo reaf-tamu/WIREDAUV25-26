@@ -36,9 +36,9 @@ def hover():
 def right():
     """Turn right by driving the port/starboard horizontal thrusters unevenly."""
     print("turning right")
-    A1.set_speed(100)
+    A1.set_speed(80)
     A4.set_speed(100)
-    M1.set_speed(80)
+    M1.set_speed(100)
     M4.set_speed(80)
     A1.run()
     A4.run()
@@ -49,9 +49,9 @@ def right():
 def left():
     """Turn left by driving the port/starboard horizontal thrusters unevenly."""
     print("turning left")
-    A1.set_speed(80)
+    A1.set_speed(100)
     A4.set_speed(80)
-    M1.set_speed(100)
+    M1.set_speed(80)
     M4.set_speed(100)
     A1.run()
     A4.run()
@@ -64,9 +64,9 @@ def forward():
     thrusters to counteract positive buoyancy so it doesn't float up while
     underway."""
     print("going forward")
-    A1.set_speed(100)
+    A1.set_speed(80)
     A4.set_speed(100)
-    M1.set_speed(100)
+    M1.set_speed(80)
     M4.set_speed(100)
     A2.set_speed(FORWARD_DOWN_BIAS)
     A3.set_speed(FORWARD_DOWN_BIAS)
