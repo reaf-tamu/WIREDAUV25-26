@@ -65,8 +65,8 @@ def forward():
     underway."""
     print("going forward")
     A1.set_speed(80)
-    A4.set_speed(100)
-    M1.set_speed(80)
+    A4.set_speed(80)
+    M1.set_speed(100)
     M4.set_speed(100)
     A2.set_speed(FORWARD_DOWN_BIAS)
     A3.set_speed(FORWARD_DOWN_BIAS)
