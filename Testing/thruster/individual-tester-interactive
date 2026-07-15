@@ -35,7 +35,7 @@ class Motor:
 # --- Interactive Multi-Thruster Test Routine ---
 if __name__ == "__main__":
     print("=========================================")
-    print("      AUV THRUSTER INDIVIDUAL TESTER     ")
+    print("      AUV THRUSTER INDIVIDUAL TESTER !!!!!!!!!!!!!!!!!!!    ")
     print("=========================================")
     print("Ensure the main thruster battery is disconnected until")
     print("the script initializes the channel to 90°.")
