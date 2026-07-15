@@ -1,26 +1,24 @@
 import time
-from motors import initialize_escs, stop_all_motors
-# Assuming your motors file has a function to set servo angles directly
-# from motors import set_all_thrusters 
+from adafruit_servokit import ServoKit
 
+# Initialize PCA9685
+kit = ServoKit(channels=16)
 
-print(f"Waiting {STARTUP_WAIT} seconds...")
-time.sleep(STARTUP_WAIT)
+# Thruster channels to initialize
+THRUSTER_CHANNELS = range(8, 16)
 
-print("Initializing ESCs (listen for the beeps)...")
-initialize_escs()
-time.sleep(3)
+print("Initializing thrusters on channels 8-15 to neutral (90°)...")
 
-print("Setting all thrusters to 90...")
-# If you have a custom servo kit instance inside motors.py, you would call it here.
-# For example, if you use Adafruit PCA9685 ServoKit under the hood:
-# for i in range(8):  # Adjust to your number of thrusters
-#     kit.servo[i].angle = 90
+for channel in THRUSTER_CHANNELS:
+    # Set ESC pulse width range
+    kit.servo[channel].set_pulse_width_range(1100, 1900)
 
-# Hold the speed indefinitely (or until interrupted)
-try:
-    while True:
-        time.sleep(1)
-except KeyboardInterrupt:
-    print("Stopping thrusters...")
-    stop_all_motors()
+    # Send neutral signal
+    kit.servo[channel].angle = 90
+
+    print(f"Channel {channel} set to 90°")
+
+print("Holding neutral signal for 5 seconds...")
+time.sleep(5)
+
+print("Initialization complete.")
